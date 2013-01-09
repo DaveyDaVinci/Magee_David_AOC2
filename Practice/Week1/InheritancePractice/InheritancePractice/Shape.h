@@ -17,6 +17,7 @@
 {
     @protected //Is protected
     int numOfSides; //Sets the int name to numOfSides that the other classes draw from
+    NSString *nameOfShape; //Sets a string name 
 }
 -(void)printNumSides;
 

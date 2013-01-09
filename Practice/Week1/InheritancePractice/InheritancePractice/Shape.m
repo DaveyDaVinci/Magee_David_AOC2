@@ -15,7 +15,7 @@
 @implementation Shape
 -(void)printNumSides //Sets a method that nslogs number of sides
 {
-    NSLog(@"A triangle has %d sides", numOfSides); //NSLogs number of sides
+    NSLog(@"A %@ has %d sides", nameOfShape, numOfSides); //NSLogs number of sides and shape name
 }
 
 @end

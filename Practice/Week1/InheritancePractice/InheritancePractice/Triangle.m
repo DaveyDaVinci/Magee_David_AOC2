@@ -11,9 +11,12 @@
 
 @implementation Triangle
 
+
+
 -(void)setNumOfSides //Method used to set the number of sides
 {
     numOfSides = 3; //Sets the number of sides to 3 for the triangle
+    nameOfShape = @"triangle"; //Sets the shape name
 }
 
 

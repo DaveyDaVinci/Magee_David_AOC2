@@ -13,7 +13,8 @@
 
 -(void)setNumOfSides
 {
-    numOfSides = 4;
+    numOfSides = 4; //Sets number of sides
+    nameOfShape = @"square"; //Calls the shape name
 
 }
 
