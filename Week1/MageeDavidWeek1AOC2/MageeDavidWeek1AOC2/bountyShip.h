@@ -10,4 +10,9 @@
 
 @interface bountyShip : spaceshipBase
 
+//Creates an int property to be synthesized in the main file
+@property int numberOfPrisoners;
+@property int speed;
+
+
 @end

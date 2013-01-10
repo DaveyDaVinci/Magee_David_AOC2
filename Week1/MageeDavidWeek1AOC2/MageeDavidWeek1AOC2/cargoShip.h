@@ -10,4 +10,9 @@
 
 @interface cargoShip : spaceshipBase
 
+//Creates an int property to be synthesized in the main file
+@property int poundsOfCargo;
+@property int weight;
+@property int speed;
+
 @end
