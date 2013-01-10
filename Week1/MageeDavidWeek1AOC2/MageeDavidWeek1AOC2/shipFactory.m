@@ -10,4 +10,10 @@
 
 @implementation shipFactory
 
+//Creates a static method based on the base class, passes in an int argument
++(spaceshipBase *)createNewShip: (int)shipType
+{
+    
+}
+
 @end
