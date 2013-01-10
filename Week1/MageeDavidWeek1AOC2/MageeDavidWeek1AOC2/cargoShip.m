@@ -11,7 +11,7 @@
 @implementation cargoShip
 
 //Gets and sets the int property declared in the header
-@synthesize poundsOfCargo, weight, speed;
+@synthesize poundsOfCargo, speed, weight;
 
 -(id)init //sets init method
 {

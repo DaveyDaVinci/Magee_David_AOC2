@@ -12,11 +12,7 @@
 
 
 //Gets and sets the properties declared in the header
-@synthesize nameOfShip;
-@synthesize howFastShipTravels;
-@synthesize numOfEngines;
-@synthesize weight;
-@synthesize speed;
+@synthesize nameOfShip, howFastShipTravels, numOfEngines, weight, speed;
 
 
 -(id)init

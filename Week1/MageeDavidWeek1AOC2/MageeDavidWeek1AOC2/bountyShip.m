@@ -12,7 +12,7 @@
 
 
 //Gets and sets the int property declared in the header
-@synthesize numberOfPrisoners, speed;
+@synthesize numberOfPrisoners, speed, weight;
 
 
 -(id)init //sets init method

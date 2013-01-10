@@ -12,7 +12,7 @@
 
 
 //Gets and sets the int property declared in the header
-@synthesize numberOfMissiles, destroyedShips, speed;
+@synthesize numberOfMissiles, destroyedShips, speed, weight;
 
 
 -(id)init //sets init method
