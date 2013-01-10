@@ -23,6 +23,8 @@
     {
         [self setNumberOfPrisoners:75]; //sets number of prisoners
         [self setSpeed:500];   //sets speed
+        [self setNameOfShip:@"Merdock"];
+        [self setNumOfEngines:4];
     }
     return self;
 }

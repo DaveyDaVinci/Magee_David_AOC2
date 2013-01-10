@@ -24,6 +24,8 @@
         [self setNumberOfMissiles:25]; //sets number of missiles
         [self setDestroyedShips:5]; //sets destroyed ships
         [self setSpeed:700];   //sets speed
+        [self setNameOfShip:@"Daria"];
+        [self setNumOfEngines:3];
     }
     return self;
 }

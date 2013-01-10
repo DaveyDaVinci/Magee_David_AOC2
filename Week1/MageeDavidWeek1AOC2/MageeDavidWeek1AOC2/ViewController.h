@@ -11,4 +11,11 @@
 
 @interface ViewController : UIViewController
 
+{
+    UILabel * titleLable;
+    UILabel * cargoLabel;
+    UILabel * destroyerLabel;
+    UILabel * bountyLabel;
+}
+
 @end

@@ -19,9 +19,11 @@
     self = [super init];
     if (self != nil)
     {
-        [self setPoundsOfCargo:50]; //sets pounds of cargo
+        [self setPoundsOfCargo:25]; //sets pounds of cargo
         [self setWeight:1000]; //sets weight
         [self setSpeed:500];   //sets speed
+        [self setNameOfShip:@"Cassia"];
+        [self setNumOfEngines:4];
     }
     return self;
 }
