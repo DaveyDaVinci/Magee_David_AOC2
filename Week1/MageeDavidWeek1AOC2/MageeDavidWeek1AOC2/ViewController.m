@@ -41,12 +41,12 @@
     if (cargoholder != nil)
     {
     
-        [cargoholder setWeight:1200]; //Sets weight
+        [cargoholder setPoundsOfCargo:300]; //Sets weight
         [cargoholder calculateShipSpeed]; //Recalculates the ship speed with new info from above
         cargoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 50.0f, 320.0f, 50.0f)]; //Standard label stuff
         if (cargoLabel != nil) {
             cargoLabel.backgroundColor= [UIColor colorWithRed:0 green:0.344 blue:0.235 alpha:1];
-            cargoLabel.text = [NSString stringWithFormat:@"The %@ flies at %i mph on a single engine, at a weight of %i tons", cargoholder.nameOfShip, cargoholder.howFastShipTravels, cargoholder.weight]; //Sets the string and int values in text
+            cargoLabel.text = [NSString stringWithFormat:@"The %@ flies at %i mph on a single engine, at a weight of %i tons", cargoholder.nameOfShip, cargoholder.howFastShipTravels, cargoholder.poundsOfCargo]; //Sets the string and int values in text
             cargoLabel.textAlignment = NSTextAlignmentCenter;
             cargoLabel.textColor =[UIColor whiteColor];
             cargoLabel.numberOfLines= 3;
@@ -89,7 +89,7 @@
         [destroyerholder calculateShipSpeed];
         destroyerLabel = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 170.0f, 320.0f, 50.0f)];//Standard label stuff
         if (destroyerLabel != nil) {
-            destroyerLabel.backgroundColor =[UIColor colorWithRed:0 green:0.344 blue:0.235 alpha:1]; 
+            destroyerLabel.backgroundColor =[UIColor colorWithRed:0.765 green:0.344 blue:0.235 alpha:1];
             destroyerLabel.text = [NSString stringWithFormat:@"The %@ flies at %i mph on a single engine, and has destroyed %i ships", destroyerholder.nameOfShip, destroyerholder.howFastShipTravels, destroyerholder.destroyedShips];
             destroyerLabel.textColor =[UIColor whiteColor];
             destroyerLabel.numberOfLines = 2;
@@ -104,7 +104,7 @@
         //Second label
         destroyerLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 230.0f, 320.0f, 50.0f)]; //Standard label stuff
         if (destroyerLabel2 != nil) {
-            destroyerLabel2.backgroundColor =[UIColor colorWithRed:0 green:0.344 blue:0.235 alpha:1];
+            destroyerLabel2.backgroundColor =[UIColor colorWithRed:0.765 green:0.344 blue:0.235 alpha:1];
             destroyerLabel2.text = [NSString stringWithFormat:@"The %@ flies at %i mph with all %i engines running", destroyerholder.nameOfShip, maxEngines, destroyerholder.numOfEngines];
             destroyerLabel2.textColor =[UIColor whiteColor];
             destroyerLabel2.numberOfLines = 2;
@@ -130,7 +130,7 @@
         [bountyholder calculateShipSpeed];
         bountyLabel = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 290.0f, 320.0f, 50.0f)];
         if (bountyLabel != nil) {
-            bountyLabel.backgroundColor =[UIColor colorWithRed:0 green:0.344 blue:0.235 alpha:1]; 
+            bountyLabel.backgroundColor =[UIColor colorWithRed:0.543 green:0.344 blue:0.635 alpha:1];
             bountyLabel.text = [NSString stringWithFormat:@"The %@ flies at %i mph on a single engine, and has %i prisoners on board", bountyholder.nameOfShip, bountyholder.howFastShipTravels, bountyholder.numberOfPrisoners];
             bountyLabel.textColor =[UIColor whiteColor];
             bountyLabel.numberOfLines = 3;
@@ -145,7 +145,7 @@
         
         bountyLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 350.0f, 320.0f, 50.0f)];
         if (bountyLabel2 != nil) {
-            bountyLabel2.backgroundColor =[UIColor colorWithRed:0 green:0.344 blue:0.235 alpha:1];
+            bountyLabel2.backgroundColor =[UIColor colorWithRed:0.543 green:0.344 blue:0.635 alpha:1];
             bountyLabel2.text = [NSString stringWithFormat:@"The %@ flies at %i mph with all %i engines running", bountyholder.nameOfShip, maxEngines, bountyholder.numOfEngines];
             bountyLabel2.textColor =[UIColor whiteColor];
             bountyLabel2.numberOfLines = 3;

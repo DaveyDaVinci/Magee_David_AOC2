@@ -13,7 +13,7 @@
 //Creates a static method based on the base class, passes in an int argument
 +(spaceshipBase *)createNewShip: (int)shipType
 {
-    if (shipType == CARGO)
+    if (shipType == CARGO) //Loops through the enum values and allocs based on them 
     {
         return [[cargoShip alloc] init];
     } else if (shipType == DESTROYER)

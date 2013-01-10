@@ -32,8 +32,7 @@
 -(void)calculateShipSpeed
 {
     [self setHowFastShipTravels:(speed  / numberOfPrisoners)]; //Calculates ship speed
-    NSLog(@"The bounty ship flies at %i mph", self.howFastShipTravels); //use the . syntax to access the data
-    
+
 }
 
 

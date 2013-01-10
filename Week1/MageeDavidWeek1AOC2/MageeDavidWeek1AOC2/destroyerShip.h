@@ -13,7 +13,7 @@
 //Creates an int property to be synthesized in the main file
 @property int numberOfMissiles;
 @property int destroyedShips;
-@property int speed;
+
 
 
 @end

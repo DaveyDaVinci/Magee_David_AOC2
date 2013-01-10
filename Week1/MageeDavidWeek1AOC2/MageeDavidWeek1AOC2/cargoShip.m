@@ -30,8 +30,7 @@
 
 -(void)calculateShipSpeed
 {
-    [self setHowFastShipTravels:(weight - speed)]; //Calculates ship speed
-    NSLog(@"The cargo ship flies at %i mph", self.howFastShipTravels); //use the . syntax to access the data 
+    [self setHowFastShipTravels:(speed - poundsOfCargo)]; //Calculates ship speed
     
 }
 

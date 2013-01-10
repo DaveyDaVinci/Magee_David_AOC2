@@ -33,8 +33,6 @@
 -(void)calculateShipSpeed
 {
     [self setHowFastShipTravels:(destroyedShips * speed)]; //Calculates ship speed
-    NSLog(@"The destroyer ship flies at %i mph", self.howFastShipTravels); //use the . syntax to access the data
-    
 }
 
 

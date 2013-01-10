@@ -26,6 +26,8 @@ typedef enum {
 @property NSString *nameOfShip;
 @property int numOfEngines;
 @property int howFastShipTravels;
+@property int weight;
+@property int speed;
 
 //Initializes the class
 -(id)init;

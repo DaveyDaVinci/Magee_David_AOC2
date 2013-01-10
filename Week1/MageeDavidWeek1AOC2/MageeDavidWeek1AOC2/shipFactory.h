@@ -15,7 +15,7 @@
 
 @interface shipFactory : NSObject
 
-//Creates a static method based on the base class, passes in an int argument
+//Creates a static method based on the base class, passes in an int argument, which is the enum from the base
 +(spaceshipBase *)createNewShip: (int)shipType;
 
 @end

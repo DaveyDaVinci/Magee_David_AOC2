@@ -15,6 +15,8 @@
 @synthesize nameOfShip;
 @synthesize howFastShipTravels;
 @synthesize numOfEngines;
+@synthesize weight;
+@synthesize speed;
 
 
 -(id)init
@@ -33,8 +35,9 @@
 //Method used to calculate the ship's speed
 -(void)calculateShipSpeed
 {
-    //Placeholder for calculation
-    NSLog(@"Ship travels at %i mph", howFastShipTravels);
+    
+    [self setHowFastShipTravels:weight - speed];
+    
 }
 
 @end
