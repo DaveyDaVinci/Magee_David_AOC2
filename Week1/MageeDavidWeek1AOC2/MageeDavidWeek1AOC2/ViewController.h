@@ -11,11 +11,14 @@
 
 @interface ViewController : UIViewController
 
-{
+{ //Calls labesl so they can be used
     UILabel * titleLable;
     UILabel * cargoLabel;
+    UILabel * cargoLabel2;
     UILabel * destroyerLabel;
+    UILabel * destroyerLabel2;
     UILabel * bountyLabel;
+    UILabel * bountyLabel2;
 }
 
 @end
