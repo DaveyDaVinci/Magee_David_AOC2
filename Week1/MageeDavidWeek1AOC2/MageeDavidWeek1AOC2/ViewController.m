@@ -139,6 +139,8 @@
         [self.view addSubview:bountyLabel];
         
         
+        
+        //Second label
         int maxEngines = bountyholder.numOfEngines * bountyholder.howFastShipTravels;
         
         bountyLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 350.0f, 320.0f, 50.0f)];
