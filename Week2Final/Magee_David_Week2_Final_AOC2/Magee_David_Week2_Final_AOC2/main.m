@@ -1,8 +1,8 @@
 //
 //  main.m
-//  MageeDavidWeek1AOC2
+//  Magee_David_Week2_Final_AOC2
 //
-//  Created by David Magee on 1/10/13.
+//  Created by David Magee on 1/16/13.
 //  Copyright (c) 2013 David Magee. All rights reserved.
 //
 

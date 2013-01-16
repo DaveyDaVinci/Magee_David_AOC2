@@ -1,8 +1,8 @@
 //
 //  ViewController.h
-//  MageeDavidProject2AOC2
+//  MageeDavidWeek1AOC2
 //
-//  Created by David Magee on 1/16/13.
+//  Created by David Magee on 1/10/13.
 //  Copyright (c) 2013 David Magee. All rights reserved.
 //
 
@@ -13,26 +13,13 @@
 @interface ViewController : UIViewController
 
 { //Calls labesl so they can be used
-    IBOutlet UISegmentedControl * defaultColor;//outlet for segment buttons
-    IBOutlet UIButton * cargoButton;
-    IBOutlet UIButton * destroyerButton;
-    IBOutlet UIButton * bountyButton;
-    IBOutlet UILabel * mainLabel;
-    IBOutlet UIStepper * multiplier;
-    IBOutlet UIButton * calculator;
-    IBOutlet UILabel *multiplierLabel;
-    IBOutlet UILabel    *   bgLabel;
-    NSString * tracker;
-    
+    UILabel * titleLable;
+    UILabel * cargoLabel;
+    UILabel * cargoLabel2;
+    UILabel * destroyerLabel;
+    UILabel * destroyerLabel2;
+    UILabel * bountyLabel;
+    UILabel * bountyLabel2;
 }
 
--(IBAction)infoButton:(id)sender; //Info button method, changes screen.
--(IBAction)colorChanger:(id)sender; //Background Color Segment method.
--(IBAction)destroyerFunction:(id)sender; //BUttons for ship changer.
--(IBAction)cargoFunction:(id)sender;//Button for cargo ship
--(IBAction)bountyFunction:(id)sender;
--(IBAction)calculateSpeedWithMultiplier:(id)sender;
--(IBAction)multiplierFunction:(id)sender;
-
 @end
-

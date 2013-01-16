@@ -1,8 +1,8 @@
 //
 //  ViewController.m
-//  MageeDavidProject2AOC2
+//  MageeDavidWeek1AOC2
 //
-//  Created by David Magee on 1/16/13.
+//  Created by David Magee on 1/10/13.
 //  Copyright (c) 2013 David Magee. All rights reserved.
 //
 
@@ -18,188 +18,151 @@
 
 
 
-//Color changes
--(IBAction)colorChanger:(id)sender //Calls the color changer function
-{
-    UISegmentedControl *changeColor = (UISegmentedControl*) sender; //Sets up the controller with a pointer to sender
-    if (changeColor != nil)
-    {
-        int colorIndex = changeColor.selectedSegmentIndex; //Grabs the index value 
-        
-        if (colorIndex == 0)
-        {
-            self.view.backgroundColor = [UIColor blueColor]; //If 0, changes to blue
-            
-            //Changes text colors to white
-            mainLabel.textColor = [UIColor whiteColor];
-            bgLabel.textColor = [UIColor whiteColor];
-            multiplierLabel.textColor = [UIColor whiteColor];
-        } else if (colorIndex == 1){
-            self.view.backgroundColor = [UIColor redColor]; //If 1, changes to red
-            
-            //Changes text colors to white
-            mainLabel.textColor = [UIColor whiteColor];
-            bgLabel.textColor = [UIColor whiteColor];
-            multiplierLabel.textColor = [UIColor whiteColor];
-        } else if (colorIndex == 2){
-            self.view.backgroundColor = [UIColor greenColor]; //If 2, changes to green
-            
-            //Changes text colors to black
-            mainLabel.textColor = [UIColor blackColor];
-            bgLabel.textColor = [UIColor blackColor];
-            multiplierLabel.textColor = [UIColor blackColor];
-        }
-    }
-}
 
-
-//Info button
--(IBAction)infoButton:(id)sender //Info button function
-{
-    InfoView *secondView = [[InfoView alloc] initWithNibName:@"InfoView" bundle:nil];
-    if (secondView != nil) //Allocates second view, inits from the xib file
-    {
-        [self presentViewController:secondView animated:true completion:nil]; //Brings up the second view
-    }
-}
-
-
-
-//Ship Buttons
--(IBAction)destroyerFunction:(id)sender
-{
-    int multiplied = multiplier.value;
-    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Destroyer's speed is ready to be calculated", multiplied];//Changes text to say destroyer
-    
-    //These enable and disable the buttons, as well as change the alphas to appear grayed out
-    destroyerButton.enabled = false;
-    cargoButton.enabled = true;
-    bountyButton.enabled = true;
-    destroyerButton.alpha = 0.8;
-    cargoButton.alpha = 1;
-    bountyButton.alpha = 1;
-    tracker = [NSString stringWithFormat:@"Destroyer"];
-    
-    
-}
-
--(IBAction)cargoFunction:(id)sender
-{
-    int multiplied = multiplier.value;
-    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Cargo Ship's speed is ready to be calculated", multiplied];//Changes text to say Cargo
-    
-    //These enable and disable, as well as change the alphas to appear grayed out
-    destroyerButton.enabled = true;
-    cargoButton.enabled = false;
-    bountyButton.enabled = true;
-    destroyerButton.alpha = 1;
-    cargoButton.alpha = 0.8;
-    bountyButton.alpha = 1;
-    
-}
-
-
--(IBAction)bountyFunction:(id)sender
-{
-    int multiplied = multiplier.value;
-    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Bounty Ship's speed is ready to be calculated", multiplied];//Changes text to say Bounty
-    
-    //These enable and disable, as well as change the alphas to appear grayed out
-    destroyerButton.enabled = true;
-    cargoButton.enabled = true;
-    bountyButton.enabled = false;
-    destroyerButton.alpha = 1;
-    cargoButton.alpha = 1;
-    bountyButton.alpha = 0.8;
-
-    
-}
-
-
-
-//Stepper function
--(IBAction)multiplierFunction:(id)sender
-{
-    int multiplied = multiplier.value;
-    if (destroyerButton.enabled && cargoButton.enabled && bountyButton.enabled == true)
-    {
-    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d", multiplied];
-    } else if (destroyerButton.enabled == false)
-    {
-        mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Destroyer's speed is ready to be calculated", multiplied];
-    } else if (cargoButton.enabled == false)
-    {
-        mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Cargo Ship's speed is ready to be calculated", multiplied];
-    } else if (bountyButton.enabled == false)
-    {
-        mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Bounty Ship's speed is ready to be calculated", multiplied];
-    }
-
-
-}
-
-
-
-
-
-
-//Calculate button function
--(IBAction)calculateSpeedWithMultiplier:(id)sender
-{
-    int multiplied = multiplier.value; //This grabs the value of the stepper and stoers it in an int
-    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, no ship selected", multiplied]; //replaces the main label with a string that shows the value of the stepper if no ship is selected
-    if (cargoButton.enabled == false) //Grabs the bool of the cargo button
-    {
-        cargoShip *cargoholder2 = (cargoShip*)[shipFactory createNewShip:CARGO]; //Grabs ship from factory
-        if (cargoholder2 != nil)
-        {
-            [cargoholder2 setPoundsOfCargo:300]; //Sets pounds of cargo
-            [cargoholder2 calculateShipSpeed]; //Runs the class's calculation
-            int totalSpeed = cargoholder2.howFastShipTravels * multiplied; //multiplies calculation by stepper
-            mainLabel.text = [NSString stringWithFormat:@"The cargo ship is going %d mph", totalSpeed]; //Replaces string with calculation results
-            multiplier.value = 1; //resets stepper
-            
-        }
-    } else if (destroyerButton.enabled == false)//Grabs bool of destroyer button
-    {
-        destroyerShip *destroyerholder2 = (destroyerShip*)[shipFactory createNewShip:DESTROYER]; //grabs ship from factory
-        if (destroyerholder2 != nil)
-        {
-            [destroyerholder2 setDestroyedShips:3]; //sets ships
-            [destroyerholder2 calculateShipSpeed]; //runs the class's calculation
-            int totalSpeed = destroyerholder2.howFastShipTravels * multiplied; //multiplies calculation by stepper
-            mainLabel.text = [NSString stringWithFormat:@"The destroyer is going %d mph", totalSpeed]; //Replaces string with calculation results
-            multiplier.value = 1; //resets stepper
-        }
-        
-    } else if (bountyButton.enabled == false)
-    {
-        bountyShip *bountyholder2 = (bountyShip*)[shipFactory createNewShip:BOUNTY]; //creates ship from factory
-        if (bountyholder2 != nil)
-        {
-            [bountyholder2 setNumberOfPrisoners:13];//Sets number of prisoners
-            [bountyholder2 calculateShipSpeed]; //Runs class's calculations
-            int totalSpeed = bountyholder2.howFastShipTravels * multiplied; //multiplies calculation by stepper
-            mainLabel.text = [NSString stringWithFormat:@"The bounty ship is going %d mph", totalSpeed]; //replaces string with calculation results
-            multiplier.value = 1; //resets multiplier value
-
-        }
-    
-    }
-    multiplier.value = 1; //resets multiplier value
-}
 
 
 
 - (void)viewDidLoad
 {
     
-    self.view.backgroundColor = [UIColor blueColor]; //Sets default background color
     
-    //sets default text colors
-    mainLabel.textColor = [UIColor whiteColor];
-    bgLabel.textColor = [UIColor whiteColor];
-    multiplierLabel.textColor = [UIColor whiteColor];
+    
+    //Creates and allocates a title label so it looks pretty c:
+    titleLable = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 0.0f, 320.0f, 40.0f)]; //Allocs and inits with a frame
+    if (titleLable != nil) {
+        titleLable.backgroundColor = [UIColor colorWithRed:0.245 green:0.445 blue:0.765 alpha:1]; //Sets color
+        titleLable.textColor =[UIColor whiteColor]; //Sets text color
+        titleLable.text =@"Ship Factory"; //Sets text in label
+        titleLable.textAlignment = NSTextAlignmentCenter; //Aligns text to center
+        
+        
+    }
+    [self.view addSubview:titleLable]; //Shows the view on the screen
+    
+    
+    //Cargo Ship Section
+    
+    
+    //Creates the cargo ship and overrides the pounds of cargo
+    cargoShip *cargoholder = (cargoShip*)[shipFactory createNewShip:CARGO]; //Calls upon the cargoShip class, gives it a name, then accesses the factory and creates a new ship based onthe enum value
+    
+    if (cargoholder != nil)
+    {
+    
+        [cargoholder setPoundsOfCargo:300]; //Sets weight
+        [cargoholder calculateShipSpeed]; //Recalculates the ship speed with new info from above
+        cargoLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 50.0f, 320.0f, 50.0f)]; //Standard label stuff
+        if (cargoLabel != nil) {
+            cargoLabel.backgroundColor= [UIColor colorWithRed:0 green:0.344 blue:0.235 alpha:1];
+            cargoLabel.text = [NSString stringWithFormat:@"The %@ flies at %i mph on a single engine, at a weight of %i tons", cargoholder.nameOfShip, cargoholder.howFastShipTravels, cargoholder.poundsOfCargo]; //Sets the string and int values in text
+            cargoLabel.textAlignment = NSTextAlignmentCenter;
+            cargoLabel.textColor =[UIColor whiteColor];
+            cargoLabel.numberOfLines= 3;
+           
+        }
+        
+      
+        [self.view addSubview:cargoLabel];
+        
+        int maxEngines = cargoholder.numOfEngines * cargoholder.howFastShipTravels; //Calculates speed with number of engines
+        
+        
+        //Second label
+        cargoLabel2 = [[UILabel alloc] initWithFrame:CGRectMake(0.0f, 110.0f, 320.0f, 50.0f)];//Standard label stuff
+        if (cargoLabel2 != nil) {
+            cargoLabel2.backgroundColor= [UIColor colorWithRed:0 green:0.344 blue:0.235 alpha:1];
+            cargoLabel2.text = [NSString stringWithFormat:@"The %@ flies at %i mph with all %i engines running", cargoholder.nameOfShip, maxEngines, cargoholder.numOfEngines]; //Adds in the speed with full engines
+            cargoLabel2.textAlignment = NSTextAlignmentCenter;
+            cargoLabel2.textColor =[UIColor whiteColor];
+            cargoLabel2.numberOfLines= 3;
+            
+            
+        }
+        
+        
+        [self.view addSubview:cargoLabel2];//Sets view
+                
+    
+    }
+    
+    
+    
+    //Destroyer Ship Section
+    
+    destroyerShip *destroyerholder = (destroyerShip*)[shipFactory createNewShip:DESTROYER]; //Calls upon the destroyerShip class, gives it a name, then accesses the factory and creates a new ship based onthe enum value
+    if (destroyerholder != nil)
+    {
+    
+        [destroyerholder setDestroyedShips:7];
+        [destroyerholder calculateShipSpeed];
+        destroyerLabel = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 170.0f, 320.0f, 50.0f)];//Standard label stuff
+        if (destroyerLabel != nil) {
+            destroyerLabel.backgroundColor =[UIColor colorWithRed:0.765 green:0.344 blue:0.235 alpha:1];
+            destroyerLabel.text = [NSString stringWithFormat:@"The %@ flies at %i mph on a single engine, and has destroyed %i ships", destroyerholder.nameOfShip, destroyerholder.howFastShipTravels, destroyerholder.destroyedShips];
+            destroyerLabel.textColor =[UIColor whiteColor];
+            destroyerLabel.numberOfLines = 2;
+            destroyerLabel.textAlignment = NSTextAlignmentCenter;
+        }
+       
+        [self.view addSubview:destroyerLabel];
+        
+        int maxEngines = destroyerholder.numOfEngines * destroyerholder.howFastShipTravels; //Modifies the speed by multiplying it by number of engines
+        
+        
+        //Second label
+        destroyerLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 230.0f, 320.0f, 50.0f)]; //Standard label stuff
+        if (destroyerLabel2 != nil) {
+            destroyerLabel2.backgroundColor =[UIColor colorWithRed:0.765 green:0.344 blue:0.235 alpha:1];
+            destroyerLabel2.text = [NSString stringWithFormat:@"The %@ flies at %i mph with all %i engines running", destroyerholder.nameOfShip, maxEngines, destroyerholder.numOfEngines];
+            destroyerLabel2.textColor =[UIColor whiteColor];
+            destroyerLabel2.numberOfLines = 2;
+            destroyerLabel2.textAlignment = NSTextAlignmentCenter;
+        }
+        
+        [self.view addSubview:destroyerLabel2];
+        
+        
+    
+    }
+    
+    
+    
+    //Bounty ship section
+    
+    
+    bountyShip *bountyholder = (bountyShip*)[shipFactory createNewShip:BOUNTY]; //Access to bountyShip class, renames it as a holder, passes in the argument through the ship factory based on the enum in the base class header.
+    if (bountyholder != nil)
+    {
+        
+        [bountyholder setNumberOfPrisoners:13];//Sets number of prisoners
+        [bountyholder calculateShipSpeed];
+        bountyLabel = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 290.0f, 320.0f, 50.0f)];
+        if (bountyLabel != nil) {
+            bountyLabel.backgroundColor =[UIColor colorWithRed:0.543 green:0.344 blue:0.635 alpha:1];
+            bountyLabel.text = [NSString stringWithFormat:@"The %@ flies at %i mph on a single engine, and has %i prisoners on board", bountyholder.nameOfShip, bountyholder.howFastShipTravels, bountyholder.numberOfPrisoners];
+            bountyLabel.textColor =[UIColor whiteColor];
+            bountyLabel.numberOfLines = 3;
+            bountyLabel.textAlignment = NSTextAlignmentCenter;
+        }
+        [self.view addSubview:bountyLabel];
+        
+        
+        
+        //Second label
+        int maxEngines = bountyholder.numOfEngines * bountyholder.howFastShipTravels;
+        
+        bountyLabel2 = [[UILabel alloc]initWithFrame:CGRectMake(0.0f, 350.0f, 320.0f, 50.0f)];
+        if (bountyLabel2 != nil) {
+            bountyLabel2.backgroundColor =[UIColor colorWithRed:0.543 green:0.344 blue:0.635 alpha:1];
+            bountyLabel2.text = [NSString stringWithFormat:@"The %@ flies at %i mph with all %i engines running", bountyholder.nameOfShip, maxEngines, bountyholder.numOfEngines];
+            bountyLabel2.textColor =[UIColor whiteColor];
+            bountyLabel2.numberOfLines = 3;
+            bountyLabel2.textAlignment = NSTextAlignmentCenter;
+        }
+        [self.view addSubview:bountyLabel2];
+        
+        
+    }
     
     
     [super viewDidLoad];
@@ -211,6 +174,5 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 
 @end
