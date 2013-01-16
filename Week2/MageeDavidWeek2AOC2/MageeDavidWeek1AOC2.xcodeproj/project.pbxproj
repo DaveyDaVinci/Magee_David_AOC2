@@ -1,0 +1,517 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF18D37A169E844200539735 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18D379169E844200539735 /* UIKit.framework */; };
+		CF18D37C169E844200539735 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18D37B169E844200539735 /* Foundation.framework */; };
+		CF18D37E169E844200539735 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18D37D169E844200539735 /* CoreGraphics.framework */; };
+		CF18D384169E844200539735 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF18D382169E844200539735 /* InfoPlist.strings */; };
+		CF18D386169E844200539735 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D385169E844200539735 /* main.m */; };
+		CF18D38A169E844200539735 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D389169E844200539735 /* AppDelegate.m */; };
+		CF18D38C169E844200539735 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF18D38B169E844200539735 /* Default.png */; };
+		CF18D38E169E844200539735 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF18D38D169E844200539735 /* Default@2x.png */; };
+		CF18D390169E844200539735 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF18D38F169E844200539735 /* Default-568h@2x.png */; };
+		CF18D393169E844200539735 /* MainStoryboard_iPhone.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF18D391169E844200539735 /* MainStoryboard_iPhone.storyboard */; };
+		CF18D396169E844200539735 /* MainStoryboard_iPad.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = CF18D394169E844200539735 /* MainStoryboard_iPad.storyboard */; };
+		CF18D399169E844200539735 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D398169E844200539735 /* ViewController.m */; };
+		CF18D3A1169E844200539735 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18D3A0169E844200539735 /* SenTestingKit.framework */; };
+		CF18D3A2169E844200539735 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18D379169E844200539735 /* UIKit.framework */; };
+		CF18D3A3169E844200539735 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF18D37B169E844200539735 /* Foundation.framework */; };
+		CF18D3AB169E844200539735 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF18D3A9169E844200539735 /* InfoPlist.strings */; };
+		CF18D3AE169E844200539735 /* MageeDavidWeek1AOC2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D3AD169E844200539735 /* MageeDavidWeek1AOC2Tests.m */; };
+		CF18D3B9169E849D00539735 /* spaceshipBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D3B8169E849D00539735 /* spaceshipBase.m */; };
+		CF18D3BC169E84C400539735 /* cargoShip.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D3BB169E84C400539735 /* cargoShip.m */; };
+		CF18D3BF169E84DA00539735 /* destroyerShip.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D3BE169E84DA00539735 /* destroyerShip.m */; };
+		CF18D3C2169E84EE00539735 /* bountyShip.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D3C1169E84EE00539735 /* bountyShip.m */; };
+		CF18D3C5169E84FE00539735 /* shipFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF18D3C4169E84FE00539735 /* shipFactory.m */; };
+		CF991BF316A697A7002239A9 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991BF116A697A7002239A9 /* InfoView.m */; };
+		CF991BF416A697A7002239A9 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF991BF216A697A7002239A9 /* InfoView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF18D3A4169E844200539735 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF18D36C169E844100539735 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF18D374169E844100539735;
+			remoteInfo = MageeDavidWeek1AOC2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF18D375169E844200539735 /* MageeDavidWeek1AOC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MageeDavidWeek1AOC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF18D379169E844200539735 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF18D37B169E844200539735 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF18D37D169E844200539735 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF18D381169E844200539735 /* MageeDavidWeek1AOC2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MageeDavidWeek1AOC2-Info.plist"; sourceTree = "<group>"; };
+		CF18D383169E844200539735 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF18D385169E844200539735 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF18D387169E844200539735 /* MageeDavidWeek1AOC2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MageeDavidWeek1AOC2-Prefix.pch"; sourceTree = "<group>"; };
+		CF18D388169E844200539735 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF18D389169E844200539735 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF18D38B169E844200539735 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CF18D38D169E844200539735 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CF18D38F169E844200539735 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF18D392169E844200539735 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPhone.storyboard; sourceTree = "<group>"; };
+		CF18D395169E844200539735 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = en; path = en.lproj/MainStoryboard_iPad.storyboard; sourceTree = "<group>"; };
+		CF18D397169E844200539735 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF18D398169E844200539735 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF18D39F169E844200539735 /* MageeDavidWeek1AOC2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MageeDavidWeek1AOC2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF18D3A0169E844200539735 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF18D3A8169E844200539735 /* MageeDavidWeek1AOC2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MageeDavidWeek1AOC2Tests-Info.plist"; sourceTree = "<group>"; };
+		CF18D3AA169E844200539735 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF18D3AC169E844200539735 /* MageeDavidWeek1AOC2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MageeDavidWeek1AOC2Tests.h; sourceTree = "<group>"; };
+		CF18D3AD169E844200539735 /* MageeDavidWeek1AOC2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MageeDavidWeek1AOC2Tests.m; sourceTree = "<group>"; };
+		CF18D3B7169E849D00539735 /* spaceshipBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = spaceshipBase.h; sourceTree = "<group>"; };
+		CF18D3B8169E849D00539735 /* spaceshipBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = spaceshipBase.m; sourceTree = "<group>"; };
+		CF18D3BA169E84C400539735 /* cargoShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = cargoShip.h; sourceTree = "<group>"; };
+		CF18D3BB169E84C400539735 /* cargoShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = cargoShip.m; sourceTree = "<group>"; };
+		CF18D3BD169E84DA00539735 /* destroyerShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = destroyerShip.h; sourceTree = "<group>"; };
+		CF18D3BE169E84DA00539735 /* destroyerShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = destroyerShip.m; sourceTree = "<group>"; };
+		CF18D3C0169E84EE00539735 /* bountyShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = bountyShip.h; sourceTree = "<group>"; };
+		CF18D3C1169E84EE00539735 /* bountyShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = bountyShip.m; sourceTree = "<group>"; };
+		CF18D3C3169E84FE00539735 /* shipFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = shipFactory.h; sourceTree = "<group>"; };
+		CF18D3C4169E84FE00539735 /* shipFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = shipFactory.m; sourceTree = "<group>"; };
+		CF991BF016A697A7002239A9 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = InfoView.h; sourceTree = "<group>"; };
+		CF991BF116A697A7002239A9 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = InfoView.m; sourceTree = "<group>"; };
+		CF991BF216A697A7002239A9 /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = InfoView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF18D372169E844100539735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF18D37A169E844200539735 /* UIKit.framework in Frameworks */,
+				CF18D37C169E844200539735 /* Foundation.framework in Frameworks */,
+				CF18D37E169E844200539735 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF18D39B169E844200539735 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF18D3A1169E844200539735 /* SenTestingKit.framework in Frameworks */,
+				CF18D3A2169E844200539735 /* UIKit.framework in Frameworks */,
+				CF18D3A3169E844200539735 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF18D36A169E844100539735 = {
+			isa = PBXGroup;
+			children = (
+				CF18D37F169E844200539735 /* MageeDavidWeek1AOC2 */,
+				CF18D3A6169E844200539735 /* MageeDavidWeek1AOC2Tests */,
+				CF18D378169E844200539735 /* Frameworks */,
+				CF18D376169E844200539735 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF18D376169E844200539735 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF18D375169E844200539735 /* MageeDavidWeek1AOC2.app */,
+				CF18D39F169E844200539735 /* MageeDavidWeek1AOC2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF18D378169E844200539735 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF18D379169E844200539735 /* UIKit.framework */,
+				CF18D37B169E844200539735 /* Foundation.framework */,
+				CF18D37D169E844200539735 /* CoreGraphics.framework */,
+				CF18D3A0169E844200539735 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF18D37F169E844200539735 /* MageeDavidWeek1AOC2 */ = {
+			isa = PBXGroup;
+			children = (
+				CF18D388169E844200539735 /* AppDelegate.h */,
+				CF18D389169E844200539735 /* AppDelegate.m */,
+				CF18D391169E844200539735 /* MainStoryboard_iPhone.storyboard */,
+				CF18D394169E844200539735 /* MainStoryboard_iPad.storyboard */,
+				CF18D397169E844200539735 /* ViewController.h */,
+				CF18D398169E844200539735 /* ViewController.m */,
+				CF18D380169E844200539735 /* Supporting Files */,
+				CF18D3B7169E849D00539735 /* spaceshipBase.h */,
+				CF18D3B8169E849D00539735 /* spaceshipBase.m */,
+				CF18D3BA169E84C400539735 /* cargoShip.h */,
+				CF18D3BB169E84C400539735 /* cargoShip.m */,
+				CF18D3BD169E84DA00539735 /* destroyerShip.h */,
+				CF18D3BE169E84DA00539735 /* destroyerShip.m */,
+				CF18D3C0169E84EE00539735 /* bountyShip.h */,
+				CF18D3C1169E84EE00539735 /* bountyShip.m */,
+				CF18D3C3169E84FE00539735 /* shipFactory.h */,
+				CF18D3C4169E84FE00539735 /* shipFactory.m */,
+				CF991BF016A697A7002239A9 /* InfoView.h */,
+				CF991BF116A697A7002239A9 /* InfoView.m */,
+				CF991BF216A697A7002239A9 /* InfoView.xib */,
+			);
+			path = MageeDavidWeek1AOC2;
+			sourceTree = "<group>";
+		};
+		CF18D380169E844200539735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF18D381169E844200539735 /* MageeDavidWeek1AOC2-Info.plist */,
+				CF18D382169E844200539735 /* InfoPlist.strings */,
+				CF18D385169E844200539735 /* main.m */,
+				CF18D387169E844200539735 /* MageeDavidWeek1AOC2-Prefix.pch */,
+				CF18D38B169E844200539735 /* Default.png */,
+				CF18D38D169E844200539735 /* Default@2x.png */,
+				CF18D38F169E844200539735 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF18D3A6169E844200539735 /* MageeDavidWeek1AOC2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CF18D3AC169E844200539735 /* MageeDavidWeek1AOC2Tests.h */,
+				CF18D3AD169E844200539735 /* MageeDavidWeek1AOC2Tests.m */,
+				CF18D3A7169E844200539735 /* Supporting Files */,
+			);
+			path = MageeDavidWeek1AOC2Tests;
+			sourceTree = "<group>";
+		};
+		CF18D3A7169E844200539735 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF18D3A8169E844200539735 /* MageeDavidWeek1AOC2Tests-Info.plist */,
+				CF18D3A9169E844200539735 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF18D374169E844100539735 /* MageeDavidWeek1AOC2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF18D3B1169E844200539735 /* Build configuration list for PBXNativeTarget "MageeDavidWeek1AOC2" */;
+			buildPhases = (
+				CF18D371169E844100539735 /* Sources */,
+				CF18D372169E844100539735 /* Frameworks */,
+				CF18D373169E844100539735 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MageeDavidWeek1AOC2;
+			productName = MageeDavidWeek1AOC2;
+			productReference = CF18D375169E844200539735 /* MageeDavidWeek1AOC2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF18D39E169E844200539735 /* MageeDavidWeek1AOC2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF18D3B4169E844200539735 /* Build configuration list for PBXNativeTarget "MageeDavidWeek1AOC2Tests" */;
+			buildPhases = (
+				CF18D39A169E844200539735 /* Sources */,
+				CF18D39B169E844200539735 /* Frameworks */,
+				CF18D39C169E844200539735 /* Resources */,
+				CF18D39D169E844200539735 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF18D3A5169E844200539735 /* PBXTargetDependency */,
+			);
+			name = MageeDavidWeek1AOC2Tests;
+			productName = MageeDavidWeek1AOC2Tests;
+			productReference = CF18D39F169E844200539735 /* MageeDavidWeek1AOC2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF18D36C169E844100539735 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "David Magee";
+			};
+			buildConfigurationList = CF18D36F169E844100539735 /* Build configuration list for PBXProject "MageeDavidWeek1AOC2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF18D36A169E844100539735;
+			productRefGroup = CF18D376169E844200539735 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF18D374169E844100539735 /* MageeDavidWeek1AOC2 */,
+				CF18D39E169E844200539735 /* MageeDavidWeek1AOC2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF18D373169E844100539735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF18D384169E844200539735 /* InfoPlist.strings in Resources */,
+				CF18D38C169E844200539735 /* Default.png in Resources */,
+				CF18D38E169E844200539735 /* Default@2x.png in Resources */,
+				CF18D390169E844200539735 /* Default-568h@2x.png in Resources */,
+				CF18D393169E844200539735 /* MainStoryboard_iPhone.storyboard in Resources */,
+				CF18D396169E844200539735 /* MainStoryboard_iPad.storyboard in Resources */,
+				CF991BF416A697A7002239A9 /* InfoView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF18D39C169E844200539735 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF18D3AB169E844200539735 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF18D39D169E844200539735 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF18D371169E844100539735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF18D386169E844200539735 /* main.m in Sources */,
+				CF18D38A169E844200539735 /* AppDelegate.m in Sources */,
+				CF18D399169E844200539735 /* ViewController.m in Sources */,
+				CF18D3B9169E849D00539735 /* spaceshipBase.m in Sources */,
+				CF18D3BC169E84C400539735 /* cargoShip.m in Sources */,
+				CF18D3BF169E84DA00539735 /* destroyerShip.m in Sources */,
+				CF18D3C2169E84EE00539735 /* bountyShip.m in Sources */,
+				CF18D3C5169E84FE00539735 /* shipFactory.m in Sources */,
+				CF991BF316A697A7002239A9 /* InfoView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF18D39A169E844200539735 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF18D3AE169E844200539735 /* MageeDavidWeek1AOC2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF18D3A5169E844200539735 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF18D374169E844100539735 /* MageeDavidWeek1AOC2 */;
+			targetProxy = CF18D3A4169E844200539735 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF18D382169E844200539735 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF18D383169E844200539735 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF18D391169E844200539735 /* MainStoryboard_iPhone.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF18D392169E844200539735 /* en */,
+			);
+			name = MainStoryboard_iPhone.storyboard;
+			sourceTree = "<group>";
+		};
+		CF18D394169E844200539735 /* MainStoryboard_iPad.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF18D395169E844200539735 /* en */,
+			);
+			name = MainStoryboard_iPad.storyboard;
+			sourceTree = "<group>";
+		};
+		CF18D3A9169E844200539735 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF18D3AA169E844200539735 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF18D3AF169E844200539735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF18D3B0169E844200539735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF18D3B2169E844200539735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MageeDavidWeek1AOC2/MageeDavidWeek1AOC2-Prefix.pch";
+				INFOPLIST_FILE = "MageeDavidWeek1AOC2/MageeDavidWeek1AOC2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF18D3B3169E844200539735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MageeDavidWeek1AOC2/MageeDavidWeek1AOC2-Prefix.pch";
+				INFOPLIST_FILE = "MageeDavidWeek1AOC2/MageeDavidWeek1AOC2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF18D3B5169E844200539735 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MageeDavidWeek1AOC2.app/MageeDavidWeek1AOC2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MageeDavidWeek1AOC2/MageeDavidWeek1AOC2-Prefix.pch";
+				INFOPLIST_FILE = "MageeDavidWeek1AOC2Tests/MageeDavidWeek1AOC2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CF18D3B6169E844200539735 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MageeDavidWeek1AOC2.app/MageeDavidWeek1AOC2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MageeDavidWeek1AOC2/MageeDavidWeek1AOC2-Prefix.pch";
+				INFOPLIST_FILE = "MageeDavidWeek1AOC2Tests/MageeDavidWeek1AOC2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF18D36F169E844100539735 /* Build configuration list for PBXProject "MageeDavidWeek1AOC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF18D3AF169E844200539735 /* Debug */,
+				CF18D3B0169E844200539735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF18D3B1169E844200539735 /* Build configuration list for PBXNativeTarget "MageeDavidWeek1AOC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF18D3B2169E844200539735 /* Debug */,
+				CF18D3B3169E844200539735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF18D3B4169E844200539735 /* Build configuration list for PBXNativeTarget "MageeDavidWeek1AOC2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF18D3B5169E844200539735 /* Debug */,
+				CF18D3B6169E844200539735 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF18D36C169E844100539735 /* Project object */;
+}
