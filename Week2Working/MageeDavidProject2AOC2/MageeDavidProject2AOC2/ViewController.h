@@ -21,11 +21,22 @@
     UILabel * bountyLabel;
     UILabel * bountyLabel2;
     
-    IBOutlet UISegmentedControl * defaultColor;
+    IBOutlet UISegmentedControl * defaultColor;//outlet for segment buttons
+    IBOutlet UIButton * cargoButton;
+    IBOutlet UIButton * destroyerButton;
+    IBOutlet UIButton * bountyButton;
+    IBOutlet UILabel * mainLabel;
+    IBOutlet UIStepper * multiplier;
+    IBOutlet UIButton * calculator;
+    
 }
 
 -(IBAction)infoButton:(id)sender; //Info button method, changes screen.
--(IBAction)colorChanger:(id)sender;
+-(IBAction)colorChanger:(id)sender; //Background Color Segment method.
+-(IBAction)destroyerFunction:(id)sender; //BUttons for ship changer.
+-(IBAction)cargoFunction:(id)sender;//Button for cargo ship
+-(IBAction)bountyFunction:(id)sender;
+-(IBAction)calculateSpeedWithMultiplier:(id)sender;
 
 @end
 
