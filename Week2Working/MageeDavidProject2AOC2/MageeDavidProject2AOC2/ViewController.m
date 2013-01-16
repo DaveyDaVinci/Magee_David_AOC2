@@ -17,12 +17,38 @@
 
 
 
--(IBAction)infoButton:(id)sender
+
+//Color changes
+-(IBAction)colorChanger:(id)sender
+{
+    UISegmentedControl *changeColor = (UISegmentedControl*) sender;
+    if (changeColor != nil)
+    {
+        int colorIndex = changeColor.selectedSegmentIndex;
+        
+        if (colorIndex == 0)
+        {
+            self.view.backgroundColor = [UIColor blueColor];
+        } else if (colorIndex == 1){
+            self.view.backgroundColor = [UIColor redColor];
+        } else if (colorIndex == 2){
+            self.view.backgroundColor = [UIColor greenColor];
+        }
+        
+        
+        
+    }
+
+}
+
+
+//Info button
+-(IBAction)infoButton:(id)sender //Info button function
 {
     InfoView *secondView = [[InfoView alloc] initWithNibName:@"InfoView" bundle:nil];
-    if (secondView != nil)
+    if (secondView != nil) //Allocates second view, inits from the xib file
     {
-        [self presentViewController:secondView animated:true completion:nil];
+        [self presentViewController:secondView animated:true completion:nil]; //Brings up the second view
     }
     
 }
@@ -34,6 +60,8 @@
 
 - (void)viewDidLoad
 {
+    
+    self.view.backgroundColor = [UIColor blueColor];
     
     
     

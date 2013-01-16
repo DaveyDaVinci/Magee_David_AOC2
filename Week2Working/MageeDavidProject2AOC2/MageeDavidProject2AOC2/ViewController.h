@@ -20,9 +20,12 @@
     UILabel * destroyerLabel2;
     UILabel * bountyLabel;
     UILabel * bountyLabel2;
+    
+    IBOutlet UISegmentedControl * defaultColor;
 }
 
--(IBAction)infoButton:(id)sender;
+-(IBAction)infoButton:(id)sender; //Info button method, changes screen.
+-(IBAction)colorChanger:(id)sender;
 
 @end
 
