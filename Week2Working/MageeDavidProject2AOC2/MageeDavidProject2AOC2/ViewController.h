@@ -22,7 +22,7 @@
     IBOutlet UIButton * calculator;
     IBOutlet UILabel *multiplierLabel;
     IBOutlet UILabel    *   bgLabel;
-    int tracker;
+    NSString * tracker;
     
 }
 

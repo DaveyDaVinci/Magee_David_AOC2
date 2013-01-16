@@ -68,7 +68,8 @@
 //Ship Buttons
 -(IBAction)destroyerFunction:(id)sender
 {
-    mainLabel.text = [NSString stringWithFormat:@"Destroyer selected"];//Changes text to say destroyer
+    int multiplied = multiplier.value;
+    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Destroyer's speed is ready to be calculated", multiplied];//Changes text to say destroyer
     
     //These enable and disable the buttons, as well as change the alphas to appear grayed out
     destroyerButton.enabled = false;
@@ -77,13 +78,15 @@
     destroyerButton.alpha = 0.8;
     cargoButton.alpha = 1;
     bountyButton.alpha = 1;
-    tracker = 0;
+    tracker = [NSString stringWithFormat:@"Destroyer"];
+    
     
 }
 
 -(IBAction)cargoFunction:(id)sender
 {
-    mainLabel.text = [NSString stringWithFormat:@"Cargo Ship selected"];//Changes text to say Cargo
+    int multiplied = multiplier.value;
+    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Cargo Ship's speed is ready to be calculated", multiplied];//Changes text to say Cargo
     
     //These enable and disable, as well as change the alphas to appear grayed out
     destroyerButton.enabled = true;
@@ -92,14 +95,14 @@
     destroyerButton.alpha = 1;
     cargoButton.alpha = 0.8;
     bountyButton.alpha = 1;
-    tracker = 1;
     
 }
 
 
 -(IBAction)bountyFunction:(id)sender
 {
-    mainLabel.text = [NSString stringWithFormat:@"Bounty Ship selected"];//Changes text to say Bounty
+    int multiplied = multiplier.value;
+    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Bounty Ship's speed is ready to be calculated", multiplied];//Changes text to say Bounty
     
     //These enable and disable, as well as change the alphas to appear grayed out
     destroyerButton.enabled = true;
@@ -108,15 +111,31 @@
     destroyerButton.alpha = 1;
     cargoButton.alpha = 1;
     bountyButton.alpha = 0.8;
-    tracker = 2;
+
     
 }
 
+
+
+//Stepper function
 -(IBAction)multiplierFunction:(id)sender
 {
     int multiplied = multiplier.value;
+    if (destroyerButton.enabled && cargoButton.enabled && bountyButton.enabled == true)
+    {
     mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d", multiplied];
-    
+    } else if (destroyerButton.enabled == false)
+    {
+        mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Destroyer's speed is ready to be calculated", multiplied];
+    } else if (cargoButton.enabled == false)
+    {
+        mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Cargo Ship's speed is ready to be calculated", multiplied];
+    } else if (bountyButton.enabled == false)
+    {
+        mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, the Bounty Ship's speed is ready to be calculated", multiplied];
+    }
+
+
 }
 
 
