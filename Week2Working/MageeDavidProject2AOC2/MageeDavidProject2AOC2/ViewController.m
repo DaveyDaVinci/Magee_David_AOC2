@@ -29,10 +29,25 @@
         if (colorIndex == 0)
         {
             self.view.backgroundColor = [UIColor blueColor]; //If 0, changes to blue
+            
+            //Changes text colors to white
+            mainLabel.textColor = [UIColor whiteColor];
+            bgLabel.textColor = [UIColor whiteColor];
+            multiplierLabel.textColor = [UIColor whiteColor];
         } else if (colorIndex == 1){
             self.view.backgroundColor = [UIColor redColor]; //If 1, changes to red
+            
+            //Changes text colors to white
+            mainLabel.textColor = [UIColor whiteColor];
+            bgLabel.textColor = [UIColor whiteColor];
+            multiplierLabel.textColor = [UIColor whiteColor];
         } else if (colorIndex == 2){
             self.view.backgroundColor = [UIColor greenColor]; //If 2, changes to green
+            
+            //Changes text colors to black
+            mainLabel.textColor = [UIColor blackColor];
+            bgLabel.textColor = [UIColor blackColor];
+            multiplierLabel.textColor = [UIColor blackColor];
         }
     }
 }
@@ -55,13 +70,14 @@
 {
     mainLabel.text = [NSString stringWithFormat:@"Destroyer selected"];//Changes text to say destroyer
     
-    //These enable and disable, as well as change the alphas to appear grayed out
+    //These enable and disable the buttons, as well as change the alphas to appear grayed out
     destroyerButton.enabled = false;
     cargoButton.enabled = true;
     bountyButton.enabled = true;
     destroyerButton.alpha = 0.8;
     cargoButton.alpha = 1;
     bountyButton.alpha = 1;
+    tracker = 0;
     
 }
 
@@ -76,6 +92,7 @@
     destroyerButton.alpha = 1;
     cargoButton.alpha = 0.8;
     bountyButton.alpha = 1;
+    tracker = 1;
     
 }
 
@@ -91,23 +108,67 @@
     destroyerButton.alpha = 1;
     cargoButton.alpha = 1;
     bountyButton.alpha = 0.8;
+    tracker = 2;
+    
+}
+
+-(IBAction)multiplierFunction:(id)sender
+{
+    int multiplied = multiplier.value;
+    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d", multiplied];
     
 }
 
 
+
+
+
+
+//Calculate button function
 -(IBAction)calculateSpeedWithMultiplier:(id)sender
 {
-    int multiplied = multiplier.value;
-    mainLabel.text = [NSString stringWithFormat:@"%d", multiplied];
+    int multiplied = multiplier.value; //This grabs the value of the stepper and stoers it in an int
+    mainLabel.text = [NSString stringWithFormat:@"Multiplier is set at %d, no ship selected", multiplied]; //replaces the main label with a string that shows the value of the stepper if no ship is selected
+    if (cargoButton.enabled == false) //Grabs the bool of the cargo button
+    {
+        cargoShip *cargoholder2 = (cargoShip*)[shipFactory createNewShip:CARGO]; //Grabs ship from factory
+        if (cargoholder2 != nil)
+        {
+            [cargoholder2 setPoundsOfCargo:300]; //Sets pounds of cargo
+            [cargoholder2 calculateShipSpeed]; //Runs the class's calculation
+            int totalSpeed = cargoholder2.howFastShipTravels * multiplied; //multiplies calculation by stepper
+            mainLabel.text = [NSString stringWithFormat:@"The cargo ship is going %d mph", totalSpeed]; //Replaces string with calculation results
+            multiplier.value = 1; //resets stepper
+            
+        }
+    } else if (destroyerButton.enabled == false)//Grabs bool of destroyer button
+    {
+        destroyerShip *destroyerholder2 = (destroyerShip*)[shipFactory createNewShip:DESTROYER]; //grabs ship from factory
+        if (destroyerholder2 != nil)
+        {
+            [destroyerholder2 setDestroyedShips:3]; //sets ships
+            [destroyerholder2 calculateShipSpeed]; //runs the class's calculation
+            int totalSpeed = destroyerholder2.howFastShipTravels * multiplied; //multiplies calculation by stepper
+            mainLabel.text = [NSString stringWithFormat:@"The destroyer is going %d mph", totalSpeed]; //Replaces string with calculation results
+            multiplier.value = 1; //resets stepper
+        }
+        
+    } else if (bountyButton.enabled == false)
+    {
+        bountyShip *bountyholder2 = (bountyShip*)[shipFactory createNewShip:BOUNTY]; //creates ship from factory
+        if (bountyholder2 != nil)
+        {
+            [bountyholder2 setNumberOfPrisoners:13];//Sets number of prisoners
+            [bountyholder2 calculateShipSpeed]; //Runs class's calculations
+            int totalSpeed = bountyholder2.howFastShipTravels * multiplied; //multiplies calculation by stepper
+            mainLabel.text = [NSString stringWithFormat:@"The bounty ship is going %d mph", totalSpeed]; //replaces string with calculation results
+            multiplier.value = 1; //resets multiplier value
+
+        }
+    
+    }
+    multiplier.value = 1; //resets multiplier value
 }
-
-
-
-
-
-
-
-
 
 
 
@@ -116,53 +177,10 @@
     
     self.view.backgroundColor = [UIColor blueColor]; //Sets default background color
     
-    
-    
-    //Creates and allocates a title label so it looks pretty c:
-        
-        
-    //Cargo Ship Section
-    
-    
-    //Creates the cargo ship and overrides the pounds of cargo
-    cargoShip *cargoholder = (cargoShip*)[shipFactory createNewShip:CARGO]; //Calls upon the cargoShip class, gives it a name, then accesses the factory and creates a new ship based onthe enum value
-    
-    if (cargoholder != nil)
-    {
-        
-        [cargoholder setPoundsOfCargo:300]; //Sets weight
-        [cargoholder calculateShipSpeed]; //Recalculates the ship speed with new info from above
-        int maxEngines = cargoholder.numOfEngines * cargoholder.howFastShipTravels; //Calculates speed with number of engines
-        
-    }
-    
-    
-    
-    //Destroyer Ship Section
-    
-    destroyerShip *destroyerholder = (destroyerShip*)[shipFactory createNewShip:DESTROYER]; //Calls upon the destroyerShip class, gives it a name, then accesses the factory and creates a new ship based onthe enum value
-    if (destroyerholder != nil)
-    {
-        
-        [destroyerholder setDestroyedShips:7];
-        [destroyerholder calculateShipSpeed];
-        int maxEngines = destroyerholder.numOfEngines * destroyerholder.howFastShipTravels; //Modifies the speed by multiplying it by number of engines
-       
-    }
-    
-    
-    
-    //Bounty ship section
-    
-    
-    bountyShip *bountyholder = (bountyShip*)[shipFactory createNewShip:BOUNTY]; //Access to bountyShip class, renames it as a holder, passes in the argument through the ship factory based on the enum in the base class header.
-    if (bountyholder != nil)
-    {
-        
-        [bountyholder setNumberOfPrisoners:13];//Sets number of prisoners
-        [bountyholder calculateShipSpeed];
-        int maxEngines = bountyholder.numOfEngines * bountyholder.howFastShipTravels;
-    }
+    //sets default text colors
+    mainLabel.textColor = [UIColor whiteColor];
+    bgLabel.textColor = [UIColor whiteColor];
+    multiplierLabel.textColor = [UIColor whiteColor];
     
     
     [super viewDidLoad];

@@ -13,14 +13,6 @@
 @interface ViewController : UIViewController
 
 { //Calls labesl so they can be used
-    UILabel * titleLable;
-    UILabel * cargoLabel;
-    UILabel * cargoLabel2;
-    UILabel * destroyerLabel;
-    UILabel * destroyerLabel2;
-    UILabel * bountyLabel;
-    UILabel * bountyLabel2;
-    
     IBOutlet UISegmentedControl * defaultColor;//outlet for segment buttons
     IBOutlet UIButton * cargoButton;
     IBOutlet UIButton * destroyerButton;
@@ -28,6 +20,9 @@
     IBOutlet UILabel * mainLabel;
     IBOutlet UIStepper * multiplier;
     IBOutlet UIButton * calculator;
+    IBOutlet UILabel *multiplierLabel;
+    IBOutlet UILabel    *   bgLabel;
+    int tracker;
     
 }
 
@@ -37,6 +32,7 @@
 -(IBAction)cargoFunction:(id)sender;//Button for cargo ship
 -(IBAction)bountyFunction:(id)sender;
 -(IBAction)calculateSpeedWithMultiplier:(id)sender;
+-(IBAction)multiplierFunction:(id)sender;
 
 @end
 
