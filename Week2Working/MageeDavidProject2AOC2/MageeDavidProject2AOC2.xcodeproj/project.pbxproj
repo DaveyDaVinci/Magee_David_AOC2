@@ -1,0 +1,515 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF991C0616A698DB002239A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF991C0516A698DB002239A9 /* UIKit.framework */; };
+		CF991C0816A698DB002239A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF991C0716A698DB002239A9 /* Foundation.framework */; };
+		CF991C0A16A698DB002239A9 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF991C0916A698DB002239A9 /* CoreGraphics.framework */; };
+		CF991C1016A698DB002239A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF991C0E16A698DB002239A9 /* InfoPlist.strings */; };
+		CF991C1216A698DB002239A9 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C1116A698DB002239A9 /* main.m */; };
+		CF991C1616A698DB002239A9 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C1516A698DB002239A9 /* AppDelegate.m */; };
+		CF991C1816A698DB002239A9 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF991C1716A698DB002239A9 /* Default.png */; };
+		CF991C1A16A698DB002239A9 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF991C1916A698DB002239A9 /* Default@2x.png */; };
+		CF991C1C16A698DB002239A9 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF991C1B16A698DB002239A9 /* Default-568h@2x.png */; };
+		CF991C1F16A698DB002239A9 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C1E16A698DB002239A9 /* ViewController.m */; };
+		CF991C2216A698DC002239A9 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF991C2016A698DB002239A9 /* ViewController_iPhone.xib */; };
+		CF991C2516A698DC002239A9 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF991C2316A698DC002239A9 /* ViewController_iPad.xib */; };
+		CF991C2D16A698DC002239A9 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF991C2C16A698DC002239A9 /* SenTestingKit.framework */; };
+		CF991C2E16A698DC002239A9 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF991C0516A698DB002239A9 /* UIKit.framework */; };
+		CF991C2F16A698DC002239A9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF991C0716A698DB002239A9 /* Foundation.framework */; };
+		CF991C3716A698DC002239A9 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF991C3516A698DC002239A9 /* InfoPlist.strings */; };
+		CF991C3A16A698DC002239A9 /* MageeDavidProject2AOC2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C3916A698DC002239A9 /* MageeDavidProject2AOC2Tests.m */; };
+		CF991C5016A699F0002239A9 /* bountyShip.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C4416A699EF002239A9 /* bountyShip.m */; };
+		CF991C5116A699F0002239A9 /* cargoShip.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C4616A699EF002239A9 /* cargoShip.m */; };
+		CF991C5216A699F0002239A9 /* destroyerShip.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C4816A699EF002239A9 /* destroyerShip.m */; };
+		CF991C5316A699F0002239A9 /* InfoView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C4A16A699EF002239A9 /* InfoView.m */; };
+		CF991C5416A699F0002239A9 /* InfoView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF991C4B16A699EF002239A9 /* InfoView.xib */; };
+		CF991C5516A699F0002239A9 /* shipFactory.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C4D16A699EF002239A9 /* shipFactory.m */; };
+		CF991C5616A699F0002239A9 /* spaceshipBase.m in Sources */ = {isa = PBXBuildFile; fileRef = CF991C4F16A699EF002239A9 /* spaceshipBase.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF991C3016A698DC002239A9 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF991BF816A698DB002239A9 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF991C0016A698DB002239A9;
+			remoteInfo = MageeDavidProject2AOC2;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF991C0116A698DB002239A9 /* MageeDavidProject2AOC2.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = MageeDavidProject2AOC2.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF991C0516A698DB002239A9 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF991C0716A698DB002239A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF991C0916A698DB002239A9 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF991C0D16A698DB002239A9 /* MageeDavidProject2AOC2-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MageeDavidProject2AOC2-Info.plist"; sourceTree = "<group>"; };
+		CF991C0F16A698DB002239A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF991C1116A698DB002239A9 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF991C1316A698DB002239A9 /* MageeDavidProject2AOC2-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "MageeDavidProject2AOC2-Prefix.pch"; sourceTree = "<group>"; };
+		CF991C1416A698DB002239A9 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF991C1516A698DB002239A9 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF991C1716A698DB002239A9 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CF991C1916A698DB002239A9 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CF991C1B16A698DB002239A9 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF991C1D16A698DB002239A9 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF991C1E16A698DB002239A9 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF991C2116A698DC002239A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CF991C2416A698DC002239A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CF991C2B16A698DC002239A9 /* MageeDavidProject2AOC2Tests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = MageeDavidProject2AOC2Tests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF991C2C16A698DC002239A9 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF991C3416A698DC002239A9 /* MageeDavidProject2AOC2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "MageeDavidProject2AOC2Tests-Info.plist"; sourceTree = "<group>"; };
+		CF991C3616A698DC002239A9 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF991C3816A698DC002239A9 /* MageeDavidProject2AOC2Tests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MageeDavidProject2AOC2Tests.h; sourceTree = "<group>"; };
+		CF991C3916A698DC002239A9 /* MageeDavidProject2AOC2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MageeDavidProject2AOC2Tests.m; sourceTree = "<group>"; };
+		CF991C4316A699EF002239A9 /* bountyShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = bountyShip.h; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/bountyShip.h; sourceTree = "<group>"; };
+		CF991C4416A699EF002239A9 /* bountyShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = bountyShip.m; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/bountyShip.m; sourceTree = "<group>"; };
+		CF991C4516A699EF002239A9 /* cargoShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = cargoShip.h; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/cargoShip.h; sourceTree = "<group>"; };
+		CF991C4616A699EF002239A9 /* cargoShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = cargoShip.m; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/cargoShip.m; sourceTree = "<group>"; };
+		CF991C4716A699EF002239A9 /* destroyerShip.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = destroyerShip.h; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/destroyerShip.h; sourceTree = "<group>"; };
+		CF991C4816A699EF002239A9 /* destroyerShip.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = destroyerShip.m; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/destroyerShip.m; sourceTree = "<group>"; };
+		CF991C4916A699EF002239A9 /* InfoView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoView.h; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/InfoView.h; sourceTree = "<group>"; };
+		CF991C4A16A699EF002239A9 /* InfoView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoView.m; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/InfoView.m; sourceTree = "<group>"; };
+		CF991C4B16A699EF002239A9 /* InfoView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; name = InfoView.xib; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/InfoView.xib; sourceTree = "<group>"; };
+		CF991C4C16A699EF002239A9 /* shipFactory.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = shipFactory.h; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/shipFactory.h; sourceTree = "<group>"; };
+		CF991C4D16A699EF002239A9 /* shipFactory.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = shipFactory.m; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/shipFactory.m; sourceTree = "<group>"; };
+		CF991C4E16A699EF002239A9 /* spaceshipBase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = spaceshipBase.h; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/spaceshipBase.h; sourceTree = "<group>"; };
+		CF991C4F16A699EF002239A9 /* spaceshipBase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = spaceshipBase.m; path = ../../MageeDavidWeek2AOC2/MageeDavidWeek1AOC2/spaceshipBase.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF991BFE16A698DB002239A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF991C0616A698DB002239A9 /* UIKit.framework in Frameworks */,
+				CF991C0816A698DB002239A9 /* Foundation.framework in Frameworks */,
+				CF991C0A16A698DB002239A9 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF991C2716A698DC002239A9 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF991C2D16A698DC002239A9 /* SenTestingKit.framework in Frameworks */,
+				CF991C2E16A698DC002239A9 /* UIKit.framework in Frameworks */,
+				CF991C2F16A698DC002239A9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF991BF616A698DB002239A9 = {
+			isa = PBXGroup;
+			children = (
+				CF991C0B16A698DB002239A9 /* MageeDavidProject2AOC2 */,
+				CF991C3216A698DC002239A9 /* MageeDavidProject2AOC2Tests */,
+				CF991C0416A698DB002239A9 /* Frameworks */,
+				CF991C0216A698DB002239A9 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF991C0216A698DB002239A9 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF991C0116A698DB002239A9 /* MageeDavidProject2AOC2.app */,
+				CF991C2B16A698DC002239A9 /* MageeDavidProject2AOC2Tests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF991C0416A698DB002239A9 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF991C0516A698DB002239A9 /* UIKit.framework */,
+				CF991C0716A698DB002239A9 /* Foundation.framework */,
+				CF991C0916A698DB002239A9 /* CoreGraphics.framework */,
+				CF991C2C16A698DC002239A9 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF991C0B16A698DB002239A9 /* MageeDavidProject2AOC2 */ = {
+			isa = PBXGroup;
+			children = (
+				CF991C4316A699EF002239A9 /* bountyShip.h */,
+				CF991C4416A699EF002239A9 /* bountyShip.m */,
+				CF991C4516A699EF002239A9 /* cargoShip.h */,
+				CF991C4616A699EF002239A9 /* cargoShip.m */,
+				CF991C4716A699EF002239A9 /* destroyerShip.h */,
+				CF991C4816A699EF002239A9 /* destroyerShip.m */,
+				CF991C4916A699EF002239A9 /* InfoView.h */,
+				CF991C4A16A699EF002239A9 /* InfoView.m */,
+				CF991C4B16A699EF002239A9 /* InfoView.xib */,
+				CF991C4C16A699EF002239A9 /* shipFactory.h */,
+				CF991C4D16A699EF002239A9 /* shipFactory.m */,
+				CF991C4E16A699EF002239A9 /* spaceshipBase.h */,
+				CF991C4F16A699EF002239A9 /* spaceshipBase.m */,
+				CF991C1416A698DB002239A9 /* AppDelegate.h */,
+				CF991C1516A698DB002239A9 /* AppDelegate.m */,
+				CF991C1D16A698DB002239A9 /* ViewController.h */,
+				CF991C1E16A698DB002239A9 /* ViewController.m */,
+				CF991C2016A698DB002239A9 /* ViewController_iPhone.xib */,
+				CF991C2316A698DC002239A9 /* ViewController_iPad.xib */,
+				CF991C0C16A698DB002239A9 /* Supporting Files */,
+			);
+			path = MageeDavidProject2AOC2;
+			sourceTree = "<group>";
+		};
+		CF991C0C16A698DB002239A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF991C0D16A698DB002239A9 /* MageeDavidProject2AOC2-Info.plist */,
+				CF991C0E16A698DB002239A9 /* InfoPlist.strings */,
+				CF991C1116A698DB002239A9 /* main.m */,
+				CF991C1316A698DB002239A9 /* MageeDavidProject2AOC2-Prefix.pch */,
+				CF991C1716A698DB002239A9 /* Default.png */,
+				CF991C1916A698DB002239A9 /* Default@2x.png */,
+				CF991C1B16A698DB002239A9 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF991C3216A698DC002239A9 /* MageeDavidProject2AOC2Tests */ = {
+			isa = PBXGroup;
+			children = (
+				CF991C3816A698DC002239A9 /* MageeDavidProject2AOC2Tests.h */,
+				CF991C3916A698DC002239A9 /* MageeDavidProject2AOC2Tests.m */,
+				CF991C3316A698DC002239A9 /* Supporting Files */,
+			);
+			path = MageeDavidProject2AOC2Tests;
+			sourceTree = "<group>";
+		};
+		CF991C3316A698DC002239A9 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF991C3416A698DC002239A9 /* MageeDavidProject2AOC2Tests-Info.plist */,
+				CF991C3516A698DC002239A9 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF991C0016A698DB002239A9 /* MageeDavidProject2AOC2 */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF991C3D16A698DC002239A9 /* Build configuration list for PBXNativeTarget "MageeDavidProject2AOC2" */;
+			buildPhases = (
+				CF991BFD16A698DB002239A9 /* Sources */,
+				CF991BFE16A698DB002239A9 /* Frameworks */,
+				CF991BFF16A698DB002239A9 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = MageeDavidProject2AOC2;
+			productName = MageeDavidProject2AOC2;
+			productReference = CF991C0116A698DB002239A9 /* MageeDavidProject2AOC2.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF991C2A16A698DC002239A9 /* MageeDavidProject2AOC2Tests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF991C4016A698DC002239A9 /* Build configuration list for PBXNativeTarget "MageeDavidProject2AOC2Tests" */;
+			buildPhases = (
+				CF991C2616A698DC002239A9 /* Sources */,
+				CF991C2716A698DC002239A9 /* Frameworks */,
+				CF991C2816A698DC002239A9 /* Resources */,
+				CF991C2916A698DC002239A9 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF991C3116A698DC002239A9 /* PBXTargetDependency */,
+			);
+			name = MageeDavidProject2AOC2Tests;
+			productName = MageeDavidProject2AOC2Tests;
+			productReference = CF991C2B16A698DC002239A9 /* MageeDavidProject2AOC2Tests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF991BF816A698DB002239A9 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "David Magee";
+			};
+			buildConfigurationList = CF991BFB16A698DB002239A9 /* Build configuration list for PBXProject "MageeDavidProject2AOC2" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF991BF616A698DB002239A9;
+			productRefGroup = CF991C0216A698DB002239A9 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF991C0016A698DB002239A9 /* MageeDavidProject2AOC2 */,
+				CF991C2A16A698DC002239A9 /* MageeDavidProject2AOC2Tests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF991BFF16A698DB002239A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF991C1016A698DB002239A9 /* InfoPlist.strings in Resources */,
+				CF991C1816A698DB002239A9 /* Default.png in Resources */,
+				CF991C1A16A698DB002239A9 /* Default@2x.png in Resources */,
+				CF991C1C16A698DB002239A9 /* Default-568h@2x.png in Resources */,
+				CF991C2216A698DC002239A9 /* ViewController_iPhone.xib in Resources */,
+				CF991C2516A698DC002239A9 /* ViewController_iPad.xib in Resources */,
+				CF991C5416A699F0002239A9 /* InfoView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF991C2816A698DC002239A9 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF991C3716A698DC002239A9 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF991C2916A698DC002239A9 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF991BFD16A698DB002239A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF991C1216A698DB002239A9 /* main.m in Sources */,
+				CF991C1616A698DB002239A9 /* AppDelegate.m in Sources */,
+				CF991C1F16A698DB002239A9 /* ViewController.m in Sources */,
+				CF991C5016A699F0002239A9 /* bountyShip.m in Sources */,
+				CF991C5116A699F0002239A9 /* cargoShip.m in Sources */,
+				CF991C5216A699F0002239A9 /* destroyerShip.m in Sources */,
+				CF991C5316A699F0002239A9 /* InfoView.m in Sources */,
+				CF991C5516A699F0002239A9 /* shipFactory.m in Sources */,
+				CF991C5616A699F0002239A9 /* spaceshipBase.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF991C2616A698DC002239A9 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF991C3A16A698DC002239A9 /* MageeDavidProject2AOC2Tests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF991C3116A698DC002239A9 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF991C0016A698DB002239A9 /* MageeDavidProject2AOC2 */;
+			targetProxy = CF991C3016A698DC002239A9 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF991C0E16A698DB002239A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF991C0F16A698DB002239A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF991C2016A698DB002239A9 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF991C2116A698DC002239A9 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CF991C2316A698DC002239A9 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF991C2416A698DC002239A9 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		CF991C3516A698DC002239A9 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF991C3616A698DC002239A9 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF991C3B16A698DC002239A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF991C3C16A698DC002239A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF991C3E16A698DC002239A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MageeDavidProject2AOC2/MageeDavidProject2AOC2-Prefix.pch";
+				INFOPLIST_FILE = "MageeDavidProject2AOC2/MageeDavidProject2AOC2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF991C3F16A698DC002239A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MageeDavidProject2AOC2/MageeDavidProject2AOC2-Prefix.pch";
+				INFOPLIST_FILE = "MageeDavidProject2AOC2/MageeDavidProject2AOC2-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF991C4116A698DC002239A9 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MageeDavidProject2AOC2.app/MageeDavidProject2AOC2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MageeDavidProject2AOC2/MageeDavidProject2AOC2-Prefix.pch";
+				INFOPLIST_FILE = "MageeDavidProject2AOC2Tests/MageeDavidProject2AOC2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CF991C4216A698DC002239A9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/MageeDavidProject2AOC2.app/MageeDavidProject2AOC2";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "MageeDavidProject2AOC2/MageeDavidProject2AOC2-Prefix.pch";
+				INFOPLIST_FILE = "MageeDavidProject2AOC2Tests/MageeDavidProject2AOC2Tests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF991BFB16A698DB002239A9 /* Build configuration list for PBXProject "MageeDavidProject2AOC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF991C3B16A698DC002239A9 /* Debug */,
+				CF991C3C16A698DC002239A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF991C3D16A698DC002239A9 /* Build configuration list for PBXNativeTarget "MageeDavidProject2AOC2" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF991C3E16A698DC002239A9 /* Debug */,
+				CF991C3F16A698DC002239A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF991C4016A698DC002239A9 /* Build configuration list for PBXNativeTarget "MageeDavidProject2AOC2Tests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF991C4116A698DC002239A9 /* Debug */,
+				CF991C4216A698DC002239A9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF991BF816A698DB002239A9 /* Project object */;
+}
