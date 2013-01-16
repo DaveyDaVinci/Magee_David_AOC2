@@ -22,5 +22,7 @@
     UILabel * bountyLabel2;
 }
 
+-(IBAction)infoButton:(id)sender;
+
 @end
 

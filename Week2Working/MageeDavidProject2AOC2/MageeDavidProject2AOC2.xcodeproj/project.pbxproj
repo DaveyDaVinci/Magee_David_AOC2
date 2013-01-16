@@ -145,9 +145,6 @@
 				CF991C4616A699EF002239A9 /* cargoShip.m */,
 				CF991C4716A699EF002239A9 /* destroyerShip.h */,
 				CF991C4816A699EF002239A9 /* destroyerShip.m */,
-				CF991C4916A699EF002239A9 /* InfoView.h */,
-				CF991C4A16A699EF002239A9 /* InfoView.m */,
-				CF991C4B16A699EF002239A9 /* InfoView.xib */,
 				CF991C4C16A699EF002239A9 /* shipFactory.h */,
 				CF991C4D16A699EF002239A9 /* shipFactory.m */,
 				CF991C4E16A699EF002239A9 /* spaceshipBase.h */,
@@ -158,6 +155,9 @@
 				CF991C1E16A698DB002239A9 /* ViewController.m */,
 				CF991C2016A698DB002239A9 /* ViewController_iPhone.xib */,
 				CF991C2316A698DC002239A9 /* ViewController_iPad.xib */,
+				CF991C4916A699EF002239A9 /* InfoView.h */,
+				CF991C4A16A699EF002239A9 /* InfoView.m */,
+				CF991C4B16A699EF002239A9 /* InfoView.xib */,
 				CF991C0C16A698DB002239A9 /* Supporting Files */,
 			);
 			path = MageeDavidProject2AOC2;

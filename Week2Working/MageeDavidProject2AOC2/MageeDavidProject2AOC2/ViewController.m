@@ -17,6 +17,16 @@
 
 
 
+-(IBAction)infoButton:(id)sender
+{
+    InfoView *secondView = [[InfoView alloc] initWithNibName:@"InfoView" bundle:nil];
+    if (secondView != nil)
+    {
+        [self presentViewController:secondView animated:true completion:nil];
+    }
+    
+}
+
 
 
 
