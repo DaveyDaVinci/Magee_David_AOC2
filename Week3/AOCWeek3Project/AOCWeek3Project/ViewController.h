@@ -7,7 +7,17 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "AddEventView.h"    
 
 @interface ViewController : UIViewController
+
+{
+    //Outlets for UI elements
+    IBOutlet UITextView *eventView;
+    IBOutlet UIButton *addButton;
+}
+
+//add event button
+-(IBAction)addOnClick:(id)sender;
 
 @end

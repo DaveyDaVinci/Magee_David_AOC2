@@ -8,6 +8,19 @@
 
 #import <UIKit/UIKit.h>
 
-@interface AddEventView : UIViewController
+@interface AddEventView : UIViewController <UIPickerViewDelegate>
+{
+    //Sets up outlets for UI items
+    IBOutlet UIButton *saveButton;
+    IBOutlet UIButton *closeKeyboard;
+    IBOutlet UIDatePicker *datePicker;
+    IBOutlet UITextField *eventField;
+}
+
+//Save button function
+-(IBAction)saveOnClickOrClose:(id)sender;
+
+//Collect data from picker function
+-(IBAction)collectFromPicker:(id)sender;
 
 @end
