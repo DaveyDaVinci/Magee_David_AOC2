@@ -1,0 +1,485 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		CF55DC0B16ACCA5200314743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF55DC0A16ACCA5200314743 /* UIKit.framework */; };
+		CF55DC0D16ACCA5200314743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF55DC0C16ACCA5200314743 /* Foundation.framework */; };
+		CF55DC0F16ACCA5200314743 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF55DC0E16ACCA5200314743 /* CoreGraphics.framework */; };
+		CF55DC1516ACCA5200314743 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF55DC1316ACCA5200314743 /* InfoPlist.strings */; };
+		CF55DC1716ACCA5200314743 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55DC1616ACCA5200314743 /* main.m */; };
+		CF55DC1B16ACCA5200314743 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55DC1A16ACCA5200314743 /* AppDelegate.m */; };
+		CF55DC1D16ACCA5200314743 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = CF55DC1C16ACCA5200314743 /* Default.png */; };
+		CF55DC1F16ACCA5200314743 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF55DC1E16ACCA5200314743 /* Default@2x.png */; };
+		CF55DC2116ACCA5200314743 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CF55DC2016ACCA5200314743 /* Default-568h@2x.png */; };
+		CF55DC2416ACCA5200314743 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55DC2316ACCA5200314743 /* ViewController.m */; };
+		CF55DC2716ACCA5300314743 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF55DC2516ACCA5300314743 /* ViewController_iPhone.xib */; };
+		CF55DC2A16ACCA5300314743 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF55DC2816ACCA5300314743 /* ViewController_iPad.xib */; };
+		CF55DC3216ACCA5300314743 /* SenTestingKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF55DC3116ACCA5300314743 /* SenTestingKit.framework */; };
+		CF55DC3316ACCA5300314743 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF55DC0A16ACCA5200314743 /* UIKit.framework */; };
+		CF55DC3416ACCA5300314743 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = CF55DC0C16ACCA5200314743 /* Foundation.framework */; };
+		CF55DC3C16ACCA5300314743 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = CF55DC3A16ACCA5300314743 /* InfoPlist.strings */; };
+		CF55DC3F16ACCA5300314743 /* AOCWeek3ProjectTests.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55DC3E16ACCA5300314743 /* AOCWeek3ProjectTests.m */; };
+		CF55DC4B16ACCA8B00314743 /* AddEventView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF55DC4916ACCA8B00314743 /* AddEventView.m */; };
+		CF55DC4C16ACCA8B00314743 /* AddEventView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF55DC4A16ACCA8B00314743 /* AddEventView.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		CF55DC3516ACCA5300314743 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = CF55DBFD16ACCA5200314743 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = CF55DC0516ACCA5200314743;
+			remoteInfo = AOCWeek3Project;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		CF55DC0616ACCA5200314743 /* AOCWeek3Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AOCWeek3Project.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF55DC0A16ACCA5200314743 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		CF55DC0C16ACCA5200314743 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		CF55DC0E16ACCA5200314743 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		CF55DC1216ACCA5200314743 /* AOCWeek3Project-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOCWeek3Project-Info.plist"; sourceTree = "<group>"; };
+		CF55DC1416ACCA5200314743 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF55DC1616ACCA5200314743 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		CF55DC1816ACCA5200314743 /* AOCWeek3Project-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "AOCWeek3Project-Prefix.pch"; sourceTree = "<group>"; };
+		CF55DC1916ACCA5200314743 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		CF55DC1A16ACCA5200314743 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		CF55DC1C16ACCA5200314743 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		CF55DC1E16ACCA5200314743 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		CF55DC2016ACCA5200314743 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		CF55DC2216ACCA5200314743 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		CF55DC2316ACCA5200314743 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		CF55DC2616ACCA5300314743 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
+		CF55DC2916ACCA5300314743 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		CF55DC3016ACCA5300314743 /* AOCWeek3ProjectTests.octest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AOCWeek3ProjectTests.octest; sourceTree = BUILT_PRODUCTS_DIR; };
+		CF55DC3116ACCA5300314743 /* SenTestingKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SenTestingKit.framework; path = Library/Frameworks/SenTestingKit.framework; sourceTree = DEVELOPER_DIR; };
+		CF55DC3916ACCA5300314743 /* AOCWeek3ProjectTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AOCWeek3ProjectTests-Info.plist"; sourceTree = "<group>"; };
+		CF55DC3B16ACCA5300314743 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		CF55DC3D16ACCA5300314743 /* AOCWeek3ProjectTests.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AOCWeek3ProjectTests.h; sourceTree = "<group>"; };
+		CF55DC3E16ACCA5300314743 /* AOCWeek3ProjectTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AOCWeek3ProjectTests.m; sourceTree = "<group>"; };
+		CF55DC4816ACCA8B00314743 /* AddEventView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AddEventView.h; sourceTree = "<group>"; };
+		CF55DC4916ACCA8B00314743 /* AddEventView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AddEventView.m; sourceTree = "<group>"; };
+		CF55DC4A16ACCA8B00314743 /* AddEventView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = AddEventView.xib; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		CF55DC0316ACCA5200314743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55DC0B16ACCA5200314743 /* UIKit.framework in Frameworks */,
+				CF55DC0D16ACCA5200314743 /* Foundation.framework in Frameworks */,
+				CF55DC0F16ACCA5200314743 /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55DC2C16ACCA5300314743 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55DC3216ACCA5300314743 /* SenTestingKit.framework in Frameworks */,
+				CF55DC3316ACCA5300314743 /* UIKit.framework in Frameworks */,
+				CF55DC3416ACCA5300314743 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		CF55DBFB16ACCA5200314743 = {
+			isa = PBXGroup;
+			children = (
+				CF55DC1016ACCA5200314743 /* AOCWeek3Project */,
+				CF55DC3716ACCA5300314743 /* AOCWeek3ProjectTests */,
+				CF55DC0916ACCA5200314743 /* Frameworks */,
+				CF55DC0716ACCA5200314743 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		CF55DC0716ACCA5200314743 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				CF55DC0616ACCA5200314743 /* AOCWeek3Project.app */,
+				CF55DC3016ACCA5300314743 /* AOCWeek3ProjectTests.octest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		CF55DC0916ACCA5200314743 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				CF55DC0A16ACCA5200314743 /* UIKit.framework */,
+				CF55DC0C16ACCA5200314743 /* Foundation.framework */,
+				CF55DC0E16ACCA5200314743 /* CoreGraphics.framework */,
+				CF55DC3116ACCA5300314743 /* SenTestingKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		CF55DC1016ACCA5200314743 /* AOCWeek3Project */ = {
+			isa = PBXGroup;
+			children = (
+				CF55DC1916ACCA5200314743 /* AppDelegate.h */,
+				CF55DC1A16ACCA5200314743 /* AppDelegate.m */,
+				CF55DC2216ACCA5200314743 /* ViewController.h */,
+				CF55DC2316ACCA5200314743 /* ViewController.m */,
+				CF55DC2516ACCA5300314743 /* ViewController_iPhone.xib */,
+				CF55DC2816ACCA5300314743 /* ViewController_iPad.xib */,
+				CF55DC1116ACCA5200314743 /* Supporting Files */,
+				CF55DC4816ACCA8B00314743 /* AddEventView.h */,
+				CF55DC4916ACCA8B00314743 /* AddEventView.m */,
+				CF55DC4A16ACCA8B00314743 /* AddEventView.xib */,
+			);
+			path = AOCWeek3Project;
+			sourceTree = "<group>";
+		};
+		CF55DC1116ACCA5200314743 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF55DC1216ACCA5200314743 /* AOCWeek3Project-Info.plist */,
+				CF55DC1316ACCA5200314743 /* InfoPlist.strings */,
+				CF55DC1616ACCA5200314743 /* main.m */,
+				CF55DC1816ACCA5200314743 /* AOCWeek3Project-Prefix.pch */,
+				CF55DC1C16ACCA5200314743 /* Default.png */,
+				CF55DC1E16ACCA5200314743 /* Default@2x.png */,
+				CF55DC2016ACCA5200314743 /* Default-568h@2x.png */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		CF55DC3716ACCA5300314743 /* AOCWeek3ProjectTests */ = {
+			isa = PBXGroup;
+			children = (
+				CF55DC3D16ACCA5300314743 /* AOCWeek3ProjectTests.h */,
+				CF55DC3E16ACCA5300314743 /* AOCWeek3ProjectTests.m */,
+				CF55DC3816ACCA5300314743 /* Supporting Files */,
+			);
+			path = AOCWeek3ProjectTests;
+			sourceTree = "<group>";
+		};
+		CF55DC3816ACCA5300314743 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				CF55DC3916ACCA5300314743 /* AOCWeek3ProjectTests-Info.plist */,
+				CF55DC3A16ACCA5300314743 /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		CF55DC0516ACCA5200314743 /* AOCWeek3Project */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF55DC4216ACCA5300314743 /* Build configuration list for PBXNativeTarget "AOCWeek3Project" */;
+			buildPhases = (
+				CF55DC0216ACCA5200314743 /* Sources */,
+				CF55DC0316ACCA5200314743 /* Frameworks */,
+				CF55DC0416ACCA5200314743 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = AOCWeek3Project;
+			productName = AOCWeek3Project;
+			productReference = CF55DC0616ACCA5200314743 /* AOCWeek3Project.app */;
+			productType = "com.apple.product-type.application";
+		};
+		CF55DC2F16ACCA5300314743 /* AOCWeek3ProjectTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = CF55DC4516ACCA5300314743 /* Build configuration list for PBXNativeTarget "AOCWeek3ProjectTests" */;
+			buildPhases = (
+				CF55DC2B16ACCA5300314743 /* Sources */,
+				CF55DC2C16ACCA5300314743 /* Frameworks */,
+				CF55DC2D16ACCA5300314743 /* Resources */,
+				CF55DC2E16ACCA5300314743 /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				CF55DC3616ACCA5300314743 /* PBXTargetDependency */,
+			);
+			name = AOCWeek3ProjectTests;
+			productName = AOCWeek3ProjectTests;
+			productReference = CF55DC3016ACCA5300314743 /* AOCWeek3ProjectTests.octest */;
+			productType = "com.apple.product-type.bundle";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		CF55DBFD16ACCA5200314743 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0450;
+				ORGANIZATIONNAME = "David Magee";
+			};
+			buildConfigurationList = CF55DC0016ACCA5200314743 /* Build configuration list for PBXProject "AOCWeek3Project" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = CF55DBFB16ACCA5200314743;
+			productRefGroup = CF55DC0716ACCA5200314743 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				CF55DC0516ACCA5200314743 /* AOCWeek3Project */,
+				CF55DC2F16ACCA5300314743 /* AOCWeek3ProjectTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		CF55DC0416ACCA5200314743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55DC1516ACCA5200314743 /* InfoPlist.strings in Resources */,
+				CF55DC1D16ACCA5200314743 /* Default.png in Resources */,
+				CF55DC1F16ACCA5200314743 /* Default@2x.png in Resources */,
+				CF55DC2116ACCA5200314743 /* Default-568h@2x.png in Resources */,
+				CF55DC2716ACCA5300314743 /* ViewController_iPhone.xib in Resources */,
+				CF55DC2A16ACCA5300314743 /* ViewController_iPad.xib in Resources */,
+				CF55DC4C16ACCA8B00314743 /* AddEventView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55DC2D16ACCA5300314743 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55DC3C16ACCA5300314743 /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CF55DC2E16ACCA5300314743 /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Run the unit tests in this test bundle.\n\"${SYSTEM_DEVELOPER_DIR}/Tools/RunUnitTests\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		CF55DC0216ACCA5200314743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55DC1716ACCA5200314743 /* main.m in Sources */,
+				CF55DC1B16ACCA5200314743 /* AppDelegate.m in Sources */,
+				CF55DC2416ACCA5200314743 /* ViewController.m in Sources */,
+				CF55DC4B16ACCA8B00314743 /* AddEventView.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CF55DC2B16ACCA5300314743 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CF55DC3F16ACCA5300314743 /* AOCWeek3ProjectTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		CF55DC3616ACCA5300314743 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = CF55DC0516ACCA5200314743 /* AOCWeek3Project */;
+			targetProxy = CF55DC3516ACCA5300314743 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		CF55DC1316ACCA5200314743 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF55DC1416ACCA5200314743 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		CF55DC2516ACCA5300314743 /* ViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF55DC2616ACCA5300314743 /* en */,
+			);
+			name = ViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		CF55DC2816ACCA5300314743 /* ViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF55DC2916ACCA5300314743 /* en */,
+			);
+			name = ViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		CF55DC3A16ACCA5300314743 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				CF55DC3B16ACCA5300314743 /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		CF55DC4016ACCA5300314743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		CF55DC4116ACCA5300314743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.0;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		CF55DC4316ACCA5300314743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOCWeek3Project/AOCWeek3Project-Prefix.pch";
+				INFOPLIST_FILE = "AOCWeek3Project/AOCWeek3Project-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		CF55DC4416ACCA5300314743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOCWeek3Project/AOCWeek3Project-Prefix.pch";
+				INFOPLIST_FILE = "AOCWeek3Project/AOCWeek3Project-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		CF55DC4616ACCA5300314743 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AOCWeek3Project.app/AOCWeek3Project";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOCWeek3Project/AOCWeek3Project-Prefix.pch";
+				INFOPLIST_FILE = "AOCWeek3ProjectTests/AOCWeek3ProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Debug;
+		};
+		CF55DC4716ACCA5300314743 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/AOCWeek3Project.app/AOCWeek3Project";
+				FRAMEWORK_SEARCH_PATHS = (
+					"\"$(SDKROOT)/Developer/Library/Frameworks\"",
+					"\"$(DEVELOPER_LIBRARY_DIR)/Frameworks\"",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "AOCWeek3Project/AOCWeek3Project-Prefix.pch";
+				INFOPLIST_FILE = "AOCWeek3ProjectTests/AOCWeek3ProjectTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = octest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		CF55DC0016ACCA5200314743 /* Build configuration list for PBXProject "AOCWeek3Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF55DC4016ACCA5300314743 /* Debug */,
+				CF55DC4116ACCA5300314743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		CF55DC4216ACCA5300314743 /* Build configuration list for PBXNativeTarget "AOCWeek3Project" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF55DC4316ACCA5300314743 /* Debug */,
+				CF55DC4416ACCA5300314743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		CF55DC4516ACCA5300314743 /* Build configuration list for PBXNativeTarget "AOCWeek3ProjectTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				CF55DC4616ACCA5300314743 /* Debug */,
+				CF55DC4716ACCA5300314743 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = CF55DBFD16ACCA5200314743 /* Project object */;
+}
