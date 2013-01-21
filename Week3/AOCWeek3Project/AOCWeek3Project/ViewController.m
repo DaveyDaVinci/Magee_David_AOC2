@@ -20,6 +20,10 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
+-(void)DidClose:(NSString *)nameString
+{
+    eventView.text = nameString;
+}
 
 //GO to add view on click function
 -(IBAction)addOnClick:(id)sender
@@ -28,6 +32,7 @@
     AddEventView *secondView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
     if (secondView != nil) //Allocates second view, inits from the xib file
     {
+        secondView.delegate = self ;
         //Presents the second view controller
         [self presentViewController:secondView animated:true completion:nil]; //Brings up the second view
     }

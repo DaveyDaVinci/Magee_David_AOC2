@@ -12,7 +12,11 @@
 
 @end
 
+
+
 @implementation AddEventView
+
+@synthesize delegate;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -24,6 +28,10 @@
     return self;
 }
 
+
+
+
+
 //function for button presses
 - (IBAction)saveOnClickOrClose:(id)sender
 {
@@ -33,9 +41,29 @@
     //Runs an if statement to check button tag
     if (tag == 0) {
         
+        //Check to make sure text is being gathered.  It is. 
+        NSString *text = eventField.text;
+        NSLog(@"%@", text);
+        
+        
+        if (delegate != nil)
+        {
+            
+            //Saves text to global variable
+            savedEvent = text;
+            NSLog(@"%@ %@", savedEvent, [savedDate description]);
+            
+            //Sets the text in the field as the text from the field
+            [delegate DidClose:eventField.text];
+            
+        }
+ 
+        
         //Dismisses current view 
         [self dismissViewControllerAnimated:true completion:nil];
-    
+        
+        
+            
     //Second part of the if statement
     } else if (tag == 1) {
         
@@ -45,14 +73,47 @@
 }
 
 
-//Picker view function
-- (void)pickerView:(UIPickerView *)pickerView didSelectRow:(NSInteger)row inComponent:(NSInteger)component
+
+
+
+
+//Gathers data from picker
+-(IBAction)collectFromPicker:(id)sender
 {
-    NSLog(@"code here");
+    
+    
+    
+    
+    //Sets up a new instance of the date picker for this function, and points back to sender for information
+    UIDatePicker *picker = (UIDatePicker*) sender;
+    if (picker != nil)
+    {
+        //Formats a date variable
+        savedDate = picker.date;
+        
+        //Grabs the data and logs it
+        NSLog(@"date = %@", [savedDate description]);
+    }
 }
+
+
+//Accesses delegate for a did begin typing function
+- (void)textFieldDidBeginEditing:(UITextField *)textField
+{
+    //Sets the text to nothing as you type
+    textField.text = [NSString stringWithFormat:@""];
+}
+
+
+
 
 - (void)viewDidLoad
 {
+    
+    //Sets minimum date for date picker,
+    NSDate *currentDate = [NSDate date];
+    datePicker.minimumDate = currentDate;
+    
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.
 }

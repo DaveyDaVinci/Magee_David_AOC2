@@ -9,7 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "AddEventView.h"    
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <AddEventViewDelegate> 
 
 {
     //Outlets for UI elements
