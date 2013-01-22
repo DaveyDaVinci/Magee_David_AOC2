@@ -20,6 +20,7 @@
 @interface AddEventView : UIViewController <UIPickerViewDelegate, UITextFieldDelegate>
 {
     //Sets up outlets for UI items
+    IBOutlet UIButton *homeButton;
     IBOutlet UIButton *saveButton;
     IBOutlet UIButton *closeKeyboard;
     IBOutlet UIDatePicker *datePicker;

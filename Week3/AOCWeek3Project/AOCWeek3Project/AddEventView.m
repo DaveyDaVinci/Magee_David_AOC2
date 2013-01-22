@@ -92,6 +92,29 @@
         
         //Resigns from first responder, which removes it from the top of the stack, pretty much, so the keyboard dismisses
         [eventField resignFirstResponder];
+    
+    //Tag for the close window option
+    } else if (tag == 2){
+        
+        
+        //Sets a conditional to check if anyone has entered text, if it does it closes the view
+        if ([eventField.text isEqualToString:@"Type Event Here..."] || [eventField.text length] == 0)
+        {
+            //Dismisses view
+            [self dismissViewControllerAnimated:true completion:nil];
+            
+        } else if (![eventField.text isEqualToString:@"Type Event Here..."] && [eventField.text length] >= 1){
+          
+            //Creates an alert view if any information is present
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Warning" message:@"You have unsaved event information.  Please save or delete information" delegate:nil cancelButtonTitle:@"OK" otherButtonTitles:nil];
+            if (alertView != nil) {
+                [alertView show];
+            }
+            
+        
+        }
+    
+            
     }
 }
 
@@ -121,8 +144,6 @@
     //Sets the text to nothing as you type
     textField.text = [NSString stringWithFormat:@""];
 }
-
-
 
 
 
