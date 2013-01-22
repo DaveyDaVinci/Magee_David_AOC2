@@ -42,36 +42,49 @@
     //Runs an if statement to check button tag
     if (tag == 0) {
         
-        //Sets the text in the field as a variable
+        //Sets up requirement for text input on user side
+        if ([eventField.text isEqualToString:@"Type Event Here..."])
+        {
+            //Initializes an alert view if the user didn't input any information.  
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"More Info Needed" message:@"Please input event info" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+            if (alertView != nil)
+            {
+                [alertView show];
+            }
+            
+        } else {
+        
+            //Sets the text in the field as a variable
         savedEvent = eventField.text;
  
-        if (delegate != nil)
-        {
-            //Creates an instance of a formatter
-            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
-            if (dateFormatter != nil)
+            if (delegate != nil)
             {
-                //Sets date format
-                [dateFormatter setDateFormat:@"yyyy.MM.dd"];
+                //Creates an instance of a formatter
+                NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+                if (dateFormatter != nil)
+                {
+                    //Sets date format
+                    [dateFormatter setDateFormat:@"yyyy.MM.dd"];
                 
-                //sets date as a variable
-                formattedDate = [dateFormatter stringFromDate:savedDate];
-                NSLog(@"%@", formattedDate);
+                    //sets date as a variable
+                    formattedDate = [dateFormatter stringFromDate:savedDate];
+                    NSLog(@"%@", formattedDate);
                 
-            }
+                }
 
             
-            //Saves text to global variable
-            NSLog(@"%@ %@", savedEvent, [savedDate description]);
+                //Saves text to global variable
+                NSLog(@"%@ %@", savedEvent, [savedDate description]);
             
-            //Sets the text in the field as the text from the field
-            [delegate ReturnEvent:savedEvent ReturnDate:formattedDate];
+                //Sets the text in the field as the text from the field
+                [delegate ReturnEvent:savedEvent ReturnDate:formattedDate];
             
-        }
+            }
  
         
         //Dismisses current view 
         [self dismissViewControllerAnimated:true completion:nil];
+        }
         
         
             
