@@ -23,13 +23,13 @@
 -(void)ReturnEvent:(NSString *)nameString ReturnDate:(NSString *)returnDate 
 {
     //Concantenates two strings into one 
-    NSString *thestring = [NSString stringWithFormat:@"\nEvent: %@ on %@", nameString, returnDate];
+    NSString *thestring = [NSString stringWithFormat:@"\n\n %@ on %@", nameString, returnDate];
     
     //Runs a conditional to see if the default text is still there
     if ( [eventView.text isEqualToString:@"No Events Added"] )
     {
         //If passes, then text is changed
-        eventView.text = [NSString stringWithFormat:@"Event: %@ on %@", nameString, returnDate];
+        eventView.text = [NSString stringWithFormat:@" %@ on %@", nameString, returnDate];
     } else {
     
     //If fails, text is appened

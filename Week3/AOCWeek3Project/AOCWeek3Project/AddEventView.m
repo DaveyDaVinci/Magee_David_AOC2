@@ -64,17 +64,16 @@
                 if (dateFormatter != nil)
                 {
                     //Sets date format
-                    [dateFormatter setDateFormat:@"yyyy.MM.dd"];
+                    [dateFormatter setDateFormat:@"EEE, MMM d, ''yy 'at' h:mm a"];
                 
+                    
                     //sets date as a variable
                     formattedDate = [dateFormatter stringFromDate:savedDate];
-                    NSLog(@"%@", formattedDate);
-                
                 }
 
             
                 //Saves text to global variable
-                NSLog(@"%@ %@", savedEvent, [savedDate description]);
+                //NSLog(@"%@ %@", savedEvent, [savedDate description]);
             
                 //Sets the text in the field as the text from the field
                 [delegate ReturnEvent:savedEvent ReturnDate:formattedDate];
@@ -112,8 +111,6 @@
         //Formats a date variable
         savedDate = picker.date;
         
-        //Grabs the data and logs it
-        //NSLog(@"date = %@", [savedDate description]);
     }
 }
 
