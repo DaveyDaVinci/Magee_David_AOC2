@@ -18,6 +18,7 @@
 
 @synthesize delegate;
 
+//Initializes the view 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
     
@@ -41,20 +42,30 @@
     //Runs an if statement to check button tag
     if (tag == 0) {
         
-        //Check to make sure text is being gathered.  It is. 
-        NSString *text = eventField.text;
-        NSLog(@"%@", text);
-        
-        
+        //Sets the text in the field as a variable
+        savedEvent = eventField.text;
+ 
         if (delegate != nil)
         {
+            //Creates an instance of a formatter
+            NSDateFormatter *dateFormatter = [[NSDateFormatter alloc] init];
+            if (dateFormatter != nil)
+            {
+                //Sets date format
+                [dateFormatter setDateFormat:@"yyyy.MM.dd"];
+                
+                //sets date as a variable
+                formattedDate = [dateFormatter stringFromDate:savedDate];
+                NSLog(@"%@", formattedDate);
+                
+            }
+
             
             //Saves text to global variable
-            savedEvent = text;
             NSLog(@"%@ %@", savedEvent, [savedDate description]);
             
             //Sets the text in the field as the text from the field
-            [delegate DidClose:eventField.text];
+            [delegate ReturnEvent:savedEvent ReturnDate:formattedDate];
             
         }
  
@@ -81,9 +92,6 @@
 -(IBAction)collectFromPicker:(id)sender
 {
     
-    
-    
-    
     //Sets up a new instance of the date picker for this function, and points back to sender for information
     UIDatePicker *picker = (UIDatePicker*) sender;
     if (picker != nil)
@@ -92,7 +100,7 @@
         savedDate = picker.date;
         
         //Grabs the data and logs it
-        NSLog(@"date = %@", [savedDate description]);
+        //NSLog(@"date = %@", [savedDate description]);
     }
 }
 
@@ -107,12 +115,19 @@
 
 
 
+
+
+
 - (void)viewDidLoad
 {
     
     //Sets minimum date for date picker,
     NSDate *currentDate = [NSDate date];
     datePicker.minimumDate = currentDate;
+    
+    
+    //Uses the default date so if no date is manually entered, value does not return null
+    savedDate = [NSDate date];
     
     [super viewDidLoad];
     // Do any additional setup after loading the view from its nib.

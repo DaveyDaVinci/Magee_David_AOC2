@@ -13,7 +13,7 @@
 
 //FUnction to determine if view closed
 @required
--(void)DidClose:(NSString*)nameString;
+-(void)ReturnEvent:(NSString*)nameString ReturnDate:(NSString*)returnDate;
 
 @end
 
@@ -30,6 +30,7 @@
     
     NSDate *savedDate;
     NSString *savedEvent;
+    NSString *formattedDate;
 }
 
 //Save button function

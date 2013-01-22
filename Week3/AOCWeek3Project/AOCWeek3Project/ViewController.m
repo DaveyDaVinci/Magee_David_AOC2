@@ -20,15 +20,18 @@
 	// Do any additional setup after loading the view, typically from a nib.
 }
 
--(void)DidClose:(NSString *)nameString
+-(void)ReturnEvent:(NSString *)nameString ReturnDate:(NSString *)returnDate
 {
-    eventView.text = nameString;
+    
+    eventView.text = [NSString stringWithFormat:@"Event: %@ on %@ /n", nameString, returnDate];
 }
 
 //GO to add view on click function
 -(IBAction)addOnClick:(id)sender
 {
-    //Creates the second view, allocs memory, inits with the name. 
+    
+        
+    //Creates the second view, allocs memory, inits with the name.
     AddEventView *secondView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
     if (secondView != nil) //Allocates second view, inits from the xib file
     {
