@@ -32,7 +32,7 @@
         eventView.text = [NSString stringWithFormat:@" %@ on %@", nameString, returnDate];
     } else {
     
-    //If fails, text is appened
+    //If fails, text is appended
     eventView.text = [eventView.text stringByAppendingString:thestring];
         
     }

@@ -43,7 +43,7 @@
     if (tag == 0) {
         
         //Sets up requirement for text input on user side
-        if ([eventField.text isEqualToString:@"Type Event Here..."])
+        if ([eventField.text isEqualToString:@"Type Event Here..."] || [eventField.text length] == 0)
         {
             //Initializes an alert view if the user didn't input any information.  
             UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"More Info Needed" message:@"Please input event info" delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles: nil];
