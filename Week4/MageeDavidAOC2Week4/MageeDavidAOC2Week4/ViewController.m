@@ -16,6 +16,7 @@
 
 - (void)viewDidLoad
 {
+    
     //Creats another instance of User Defaults
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     if (userDefaults != nil)
@@ -38,7 +39,7 @@
     thestring = [NSString stringWithFormat:@"\n %@ on %@", nameString, returnDate];
     
     //Runs a conditional to see if the default text is still there
-    if ( [eventView.text isEqualToString:@"No Events Added"] )
+    if ( [eventView.text isEqualToString:@"No Events Added" ] || [eventView.text length] == 0 )
     {
         //If passes, then text is changed
         eventView.text = [NSString stringWithFormat:@" %@ on %@", nameString, returnDate];
@@ -64,6 +65,7 @@
     //Set so it doesn't run if secondString is nil, which caused crashing
     if (secondString != nil)
     {
+        
         //Creates an instance of NSUserDefaults
         NSUserDefaults *savedEvents = [NSUserDefaults standardUserDefaults];
         if (savedEvents != nil)
@@ -76,6 +78,9 @@
         
             //applies the changes to the NSUserDefaults
             [savedEvents synchronize];
+            
+            UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Saved" message:@"The world has been saved!  And by world, I mean your plans..." delegate:self cancelButtonTitle:@"Ok" otherButtonTitles: nil];
+            [alertView show];
         
         }
     }
@@ -105,6 +110,7 @@
 
 
 
+//Creates the onRight: function
 -(void)onRight:(UISwipeGestureRecognizer *)right
 {
     
@@ -112,6 +118,7 @@
     AddEventView *secondView = [[AddEventView alloc] initWithNibName:@"AddEventView" bundle:nil];
     if (secondView != nil) //Allocates second view, inits from the xib file
     {
+        //Sets the delegate as its self
         secondView.delegate = self ;
         //Presents the second view controller
         [self presentViewController:secondView animated:true completion:nil]; //Brings up the second view
@@ -119,13 +126,21 @@
     
 }
 
+
+//Creates the onLeft: function
 -(void)onLeft:(UISwipeGestureRecognizer *)left
 {
+    //Creates a new instance of NSUserDefaults
     NSUserDefaults *userDefaults = [NSUserDefaults standardUserDefaults];
     if (userDefaults != nil)
     {
+        //Removes any text saved in the key Events in userDefaults
         [userDefaults removeObjectForKey:@"events"];
+        
+        //Sets the text to say that the events were cleared
         eventView.text = [NSString stringWithFormat:@"Events Cleared"];
+        
+        //Commits changes to the userDefaults
         [userDefaults synchronize];
 
     }

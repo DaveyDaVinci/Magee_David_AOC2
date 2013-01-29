@@ -83,9 +83,10 @@
 
 
 
+//Function for left swiper
 -(void)onLeft:(UISwipeGestureRecognizer *)left
 {
-   
+   //Saves the textfield to the global variable savedEvent
     savedEvent = eventField.text;
     
     if ([eventField.text isEqualToString:@"Type Event Here..."] || [eventField.text length] == 0)
