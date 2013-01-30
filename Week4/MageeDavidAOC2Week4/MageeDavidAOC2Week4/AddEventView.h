@@ -53,7 +53,7 @@
 //Created method for the swipe gesture recognizer
 -(void)onLeft:(UISwipeGestureRecognizer *)left;
 
--(void)onTap:(UITapGestureRecognizer *)tap;
+//-(void)onTap:(UITapGestureRecognizer *)tap;
 
 
 //Allows to set delegate from outside

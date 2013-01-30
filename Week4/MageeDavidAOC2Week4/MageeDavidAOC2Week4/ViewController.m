@@ -98,12 +98,15 @@
     //attaches the swiper to the label
     [swipeLabel addGestureRecognizer:rightSwiper];
     
+    
+    /* Left swiper gesture recognizers are commented out for reference.
     //Allocates the left swiper, and creates the selector method above
     leftSwiper = [[UISwipeGestureRecognizer alloc] initWithTarget:self action:@selector(onLeft:)];
     //Sets the direction for the left swiper
     leftSwiper.direction = UISwipeGestureRecognizerDirectionLeft;
     //Attaches the swiper to the label 
     [swipeLabel addGestureRecognizer:leftSwiper];
+     */
     
     [super viewWillAppear:animated];
 }
@@ -127,6 +130,8 @@
 }
 
 
+
+/* Used to delete the information on a left swipe.  Leaving in code for reference. 
 //Creates the onLeft: function
 -(void)onLeft:(UISwipeGestureRecognizer *)left
 {
@@ -145,6 +150,7 @@
 
     }
 }
+*/
 
 
 - (void)didReceiveMemoryWarning

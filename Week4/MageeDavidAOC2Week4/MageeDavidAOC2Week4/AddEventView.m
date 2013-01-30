@@ -130,6 +130,7 @@
 }
 
 
+/* This is my tap option for the date picker.  Going to keep the code so I remember how I did it
 //Sets a tap option to bring down the picker
 -(void)onTap:(UITapGestureRecognizer *)tap
 {
@@ -152,6 +153,7 @@
     //Commits view
     [UIView commitAnimations];
 }
+*/
 
 
 - (void)viewDidLoad

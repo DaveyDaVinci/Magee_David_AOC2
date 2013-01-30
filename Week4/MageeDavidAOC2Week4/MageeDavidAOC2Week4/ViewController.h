@@ -23,7 +23,9 @@
 }
 
 -(void)onRight:(UISwipeGestureRecognizer *)right;
--(void)onLeft:(UISwipeGestureRecognizer *)left;
+
+
+//-(void)onLeft:(UISwipeGestureRecognizer *)left;
 
 //add event button
 -(IBAction)addOnClick:(id)sender;
