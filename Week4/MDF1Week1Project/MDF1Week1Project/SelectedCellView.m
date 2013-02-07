@@ -8,12 +8,14 @@
 
 #import "SelectedCellView.h"
 #import "ViewController.h"
+#import "CustomCell.h"
 
 @interface SelectedCellView ()
 
 @end
 
 @implementation SelectedCellView
+@synthesize titleLabel;
 
 - (id)initWithNibName:(NSString *)nibNameOrNil bundle:(NSBundle *)nibBundleOrNil
 {
@@ -39,7 +41,10 @@
 
 -(IBAction)onClick:(id)sender
 {
+    
+    
     [self dismissViewControllerAnimated:TRUE completion:nil];
 }
+
 
 @end

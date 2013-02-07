@@ -9,7 +9,7 @@
 #import "CustomCell.h"
 
 @implementation CustomCell
-@synthesize planetLabel2, moonLabel2;
+@synthesize planetLabel2, moonLabel2, image;
 
 - (id)initWithStyle:(UITableViewCellStyle)style reuseIdentifier:(NSString *)reuseIdentifier
 {

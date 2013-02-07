@@ -10,7 +10,11 @@
 #import "ViewController.h"
 
 @interface SelectedCellView : UIViewController 
+{
+    
+}
 
 -(IBAction)onClick:(id)sender;
 
+@property (strong, nonatomic) IBOutlet UILabel *titleLabel;
 @end

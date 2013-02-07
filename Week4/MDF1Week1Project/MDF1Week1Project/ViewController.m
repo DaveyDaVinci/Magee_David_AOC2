@@ -25,6 +25,8 @@
     {
     //Sets editing the table to true
     [theTable setEditing:true];
+    [sender setTitle:@"Normal Mode" forState:UIControlStateNormal];
+    
     //Changes bool to false so next time it's clicked, else runs
     theSwitch = false;
     
@@ -34,6 +36,8 @@
         [theTable setEditing:false];
         //Sets bool to true so next time it's fired, edit will come back up
         theSwitch = true;
+        
+        [sender setTitle:@"Edit Mode" forState:UIControlStateNormal];
     }
     
 }
@@ -61,6 +65,21 @@
 
 #pragma mark -
 #pragma mark UITable View Data Source Methods
+//Used to tell which is selected.
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    
+    
+    //This creates the view and presents it
+    SelectedCellView *selectedCellView = [[SelectedCellView alloc] initWithNibName:@"SelectedCellView" bundle:nil];
+    
+    
+    
+    [self presentViewController:selectedCellView animated:TRUE completion:nil];
+    selectedCellView.titleLabel.text = [NSString stringWithFormat:@"The planet %@ has %@ moons", [firstArray objectAtIndex:indexPath.row], [secondArray objectAtIndex:indexPath.row]];
+}
+
+
 
 //This sets the custom cells
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
@@ -96,6 +115,10 @@
     //Sets cell text
     cell.planetLabel2.text = [firstArray objectAtIndex:indexPath.row];
     cell.moonLabel2.text = [NSString stringWithFormat:@"Number of Moons: %@", [secondArray objectAtIndex:indexPath.row]];
+    
+    
+    
+    
 
     
     return cell;
@@ -127,20 +150,10 @@
     //Deletes from table
     [theTable deleteRowsAtIndexPaths:[NSArray arrayWithObject:indexPath] withRowAnimation: true];
     
+    NSLog(@"%d", [firstArray count]);
+    
 }
 
-//Used to tell which is selected.
--(void)tableView:(UITableView *)tableView didDeselectRowAtIndexPath:(NSIndexPath *)indexPath
-{
-    
-    
-    //This creates the view and presents it
-    SelectedCellView *selectedCellView = [[SelectedCellView alloc] initWithNibName:@"SelectedCellView" bundle:nil];
-    
-    
-    
-    [self presentViewController:selectedCellView animated:TRUE completion:nil];
-}
 
 
 @end

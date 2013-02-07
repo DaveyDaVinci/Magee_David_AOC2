@@ -16,5 +16,6 @@
 
 @property (strong, nonatomic) IBOutlet UILabel *planetLabel2;
 @property (strong, nonatomic) IBOutlet UILabel *moonLabel2;
+@property (strong, nonatomic) IBOutlet UIImageView *image;
 
 @end

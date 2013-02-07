@@ -27,6 +27,7 @@
 		CF5CF37E16C3322E0098DC44 /* CustomCell.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5CF37D16C3322E0098DC44 /* CustomCell.m */; };
 		CF5CF38216C341250098DC44 /* SelectedCellView.m in Sources */ = {isa = PBXBuildFile; fileRef = CF5CF38016C341240098DC44 /* SelectedCellView.m */; };
 		CF5CF38316C341250098DC44 /* SelectedCellView.xib in Resources */ = {isa = PBXBuildFile; fileRef = CF5CF38116C341240098DC44 /* SelectedCellView.xib */; };
+		CF5CF39116C368570098DC44 /* UIIcon.jpg in Resources */ = {isa = PBXBuildFile; fileRef = CF5CF39016C368570098DC44 /* UIIcon.jpg */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -68,6 +69,7 @@
 		CF5CF37F16C341240098DC44 /* SelectedCellView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SelectedCellView.h; sourceTree = "<group>"; };
 		CF5CF38016C341240098DC44 /* SelectedCellView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SelectedCellView.m; sourceTree = "<group>"; };
 		CF5CF38116C341240098DC44 /* SelectedCellView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = SelectedCellView.xib; sourceTree = "<group>"; };
+		CF5CF39016C368570098DC44 /* UIIcon.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = UIIcon.jpg; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +129,7 @@
 		CF5CF34516C32B440098DC44 /* MDF1Week1Project */ = {
 			isa = PBXGroup;
 			children = (
+				CF5CF39016C368570098DC44 /* UIIcon.jpg */,
 				CF5CF34E16C32B440098DC44 /* AppDelegate.h */,
 				CF5CF34F16C32B440098DC44 /* AppDelegate.m */,
 				CF5CF35716C32B440098DC44 /* ViewController.h */,
@@ -254,6 +257,7 @@
 				CF5CF35C16C32B440098DC44 /* ViewController.xib in Resources */,
 				CF5CF37B16C3317A0098DC44 /* CustomCellView.xib in Resources */,
 				CF5CF38316C341250098DC44 /* SelectedCellView.xib in Resources */,
+				CF5CF39116C368570098DC44 /* UIIcon.jpg in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -466,6 +470,7 @@
 				CF5CF37616C32B440098DC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		CF5CF37716C32B440098DC44 /* Build configuration list for PBXNativeTarget "MDF1Week1ProjectTests" */ = {
 			isa = XCConfigurationList;
@@ -474,6 +479,7 @@
 				CF5CF37916C32B440098DC44 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
