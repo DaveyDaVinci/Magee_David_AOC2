@@ -10,16 +10,23 @@
 #import "CustomCell.h"
 #import "SelectedCellView.h"
 
+
+
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 {
+    //Outlets and variables
     IBOutlet UITableView *theTable;
     IBOutlet UIButton *editButton;
     NSMutableArray *firstArray;
     NSMutableArray *secondArray;
     BOOL theSwitch;
     
-
+    int derp;
+    
 }
+
+//button function for editing
 -(IBAction)buttonClick:(id)sender;
+
 
 @end

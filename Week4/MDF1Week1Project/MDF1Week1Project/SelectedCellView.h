@@ -7,8 +7,9 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "ViewController.h"
 
-@interface SelectedCellView : UIViewController
+@interface SelectedCellView : UIViewController 
 
 -(IBAction)onClick:(id)sender;
 

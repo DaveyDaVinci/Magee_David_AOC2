@@ -7,6 +7,7 @@
 //
 
 #import "SelectedCellView.h"
+#import "ViewController.h"
 
 @interface SelectedCellView ()
 
@@ -31,6 +32,7 @@
 
 - (void)didReceiveMemoryWarning
 {
+
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
